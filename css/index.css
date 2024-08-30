@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+@media (width < 681px) {
+    #logo_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+
+        width: 100%;
+        background-image: linear-gradient(to right, #e49386, #ffa774, #e49386);
+        background-size: 400% 400%;
+        animation: gradienteAnimacion 6s ease infinite;
+
+
+    }
+
+    #logo_container {
+        display: grid;
+        height: 100vh;
+        width: 100vw;
+        align-items: stretch;
+        justify-items: center;
+    }
+
+    #ts_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-top: 4px solid black;
+        background: rgb(2, 0, 36);
+        background-image: linear-gradient(90deg, hsl(199deg 98% 52%) 0%, hsl(199deg 93% 50%) 21%, hsl(199deg 91% 49%) 30%, hsl(199deg 92% 48%) 39%, hsl(199deg 92% 46%) 46%, hsl(199deg 93% 45%) 54%, hsl(199deg 93% 43%) 61%, hsl(199deg 94% 42%) 69%);
+        background-size: 400% 400%;
+        animation: gradienteAnimacion 6s ease infinite;
+
+    }
+
+    #an_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: 4px solid black;
+        background-image: linear-gradient(90deg, hsl(264deg 83% 39%) 0%, hsl(270deg 77% 40%) 21%, hsl(277deg 73% 40%) 30%, hsl(282deg 69% 40%) 39%, hsl(288deg 66% 41%) 46%);
+        background-size: 400% 400%;
+        animation: gradienteAnimacion 6s ease infinite;
+
+    }
+
+
+
+
+    #io_logo {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-image: linear-gradient(95deg, hsl(239deg 53% 59%) 0%, hsl(239deg 54% 62%) 20%, hsl(239deg 54% 65%) 31%, hsl(239deg 55% 68%) 40%, hsl(239deg 56% 71%) 47%, hsl(238deg 57% 74%) 55%, hsl(239deg 58% 77%) 62%);
+        background-size: 400% 400%;
+        animation: gradienteAnimacion 6s ease infinite;
+        border-top: 4px solid black;
+        border-bottom: 0px;
+    }
+
+    @keyframes gradienteAnimacion {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}

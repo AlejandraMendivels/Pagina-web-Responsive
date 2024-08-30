@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+@media (width < 681px) {
+    .header-ts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding: 6px;
+        border-bottom:2px solid rgb(117, 107, 107);
+        border-radius: 10px;
+        box-shadow: -3px 8px 11px lightblue;;
+    }
+
+    .header_logImTitl {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    #img {
+        padding: 0%;
+    }
+
+}
