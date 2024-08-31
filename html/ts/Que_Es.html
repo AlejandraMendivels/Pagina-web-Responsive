@@ -6,10 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Que Es TypeScript</title>
     <link rel="stylesheet" href="../../css/ts/Que_Es.css">
+    <link href="https://{{cdn}}/prismjs@v1.x/themes/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
 </head>
 
 <body>
     <header class="header-ts">
+
         <div>
             <img width="36px" height="36px" src="../../resources/Logos/home.svg" alt="">
         </div>
@@ -27,20 +36,34 @@
                 <img width="30px" height="30px" src="../../resources/Logos/menu_icon.svg" alt="">
             </button>
         </div>
+
     </header>
 
-    <button id="cerrar" style="border: 0; background-color: transparent;padding: 5px;visibility: hidden;">
-        <img width="36px;" height="36px;" src="../../resources/Logos/cerrar.svg" alt="">
+    <button id="cerrar" style="border: 0; background-color: transparent;padding: 5px;visibility: visible;">
+        <img id="cerrarImg" src="../../resources/Logos/cerrar.svg" alt="">
     </button>
 
     <nav id="hamburger_items" style="visibility: hidden;">
         <div>¿Qué significa que un método esté asociado a una clase?</div>
         <div>como</div>
         <div>estas</div>
-
     </nav>
+
+    <main>
+        <h1 style="text-align: center; padding: 10px;">Que es TypeScript</h1>
+        <p style="padding: 10px; text-align: justify; ">TypeScript es un superconjunto tipado de JavaScript que compila
+            a JavaScript plano. Agrega características
+            como tipado estático, clases, interfaces y módulos, lo que facilita la creación de aplicaciones a gran
+            escala.
+        </p>
+        <code>
+            let variable = hola;
+        </code>
+    </main>
 
 </body>
 <script src="../../js/ts/Que_Es.js"></script>
+<script src="https://{{cdn}}/prismjs@v1.x/components/prism-core.min.js"></script>
+<script src="https://{{cdn}}/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
 
 </html>

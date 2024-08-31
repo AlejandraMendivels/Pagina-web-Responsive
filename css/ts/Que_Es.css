@@ -6,6 +6,7 @@
 
 @media (width < 681px) {
 
+
     .header-ts {
         display: flex;
         flex-direction: row;
@@ -13,7 +14,7 @@
         text-align: center;
         align-items: center;
         padding: 6px;
-        border-bottom:2px solid rgb(117, 107, 107);
+        border-bottom: 2px solid rgb(117, 107, 107);
         border-radius: 10px;
         box-shadow: -3px 8px 11px lightblue;
         z-index: -1;
@@ -30,28 +31,30 @@
     }
 
 
-    #hamburger_items{    
-        position: relative;
+    #hamburger_items {
+        position: absolute;
         display: grid;
-        height: calc(100vh);
+        height: 100vh;
+        width: 20vw;
+        margin-left: 80vw;
         justify-items: center;
         align-content: space-evenly;
-        margin-left: 100vw;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         box-shadow: -3px 8px 11px lightblue;
-        background-color:white;     
+        background-color: white;
         margin-top: -78px;
-        z-index: 4;
+        z-index: 2;
         font-size: 20px;
-        padding: 20px;
-     
+        transition: all 1s;
     }
+    
+    
 
     #hamburger_items div:first-child {
         border-bottom: 2px solid black;
     }
-    
+
     #hamburger_items div:nth-child(2) {
         border-bottom: 2px solid black;
     }
@@ -60,11 +63,28 @@
         border-bottom: 2px solid black;
     }
 
-    #cerrar{
+    #cerrar {
         position: absolute;
         top: 0px;
+        transition:all 1s;
+        left: 88vw;
+        z-index: 3;
+    }
 
-        left: 100vw;
-        z-index: 5;
+    #cerrarImg {
+        width: 0px;
+        height: 36px;
+        transition: all 1s;
+        z-index: 999;
+    }
+
+    @keyframes fadeOut{
+        from{
+            opacity: 1;
+        }
+
+        to{
+            opacity: 0;
+        }
     }
 }
