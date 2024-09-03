@@ -41,3 +41,9 @@ document.querySelectorAll('.h2-drop').forEach(button => {
     menu.classList.toggle('open');
   });
 });
+
+//scroll ID
+setTimeout(()=>{
+  id = window.location.hash.substring(1);
+  document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+},200)

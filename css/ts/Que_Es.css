@@ -7,6 +7,9 @@
     line-height: 24px;
     font-style: normal;
 }
+/* html {
+    scroll-behavior: smooth;
+} */
 
 @media (width < 681px) {
     a {
@@ -74,20 +77,31 @@
         border-radius: 4px;
     }
 
-    #menu1.open {
-        height: 80px;
+    #menu1.open,
+    #menu6.open {
+        height: 100px;
     }
 
-    #menu2.open {
+    #menu2.open,
+    #menu7.open {
         height: 132px;
     }
 
-    #menu4.open {
+    #menu3.open{
+        height: 70px;
+    }
+    #menu4.open,
+    #menu8.open {
         height: 80px;
     }
 
-    #menu5.open {
+    #menu5.open,
+    #menu9.open {
         height: 100px;
+    }
+
+    #menu10.open {
+        height: 134px;
     }
 
     #buttSiAnt {
