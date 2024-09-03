@@ -22,6 +22,13 @@
         font-optical-sizing: auto;
         line-height: 24px;
         font-style: normal;
+        margin-top: 8px;
+
+    }
+
+    li {
+        margin-top: 8px;
+        margin-left: 4px
     }
 
     h1 {
@@ -52,7 +59,7 @@
         margin-top: 10px;
         margin-left: 4px;
         width: 98vw;
-        
+
     }
 
     menu {
@@ -83,7 +90,22 @@
         height: 100px;
     }
 
-    #buttSiAnt {}
+    #buttSiAnt {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .butNext {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: solid 1px;
+        border-radius: 10px;
+        padding: 4px;
+        background-color: rgba(87, 185, 250, 0.5);
+    }
 
     menu.open {
         height: 50px;
@@ -140,7 +162,7 @@
     }
 
     div.arrow-1 {
-        
+
         height: 10px;
         width: 10px;
         border: 1px solid rgb(6, 6, 6);
@@ -148,7 +170,8 @@
         transform: rotate(45deg);
         transition: all 1s;
     }
-    div.arrow-1-open{
+
+    div.arrow-1-open {
         transform: rotate(135deg);
     }
 
