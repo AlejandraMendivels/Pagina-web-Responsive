@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que Es TypeScript</title>
+    <link rel="stylesheet" href="../../css/an/Que_Es.css">
+    <script type="module"
+        src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-ts">
+
+        <div>
+            <a href="../../index.html"><img width="36px" height="36px" src="../../resources/Logos/home.svg" alt=""></a>
+        </div>
+        <div class="header_logImTitl">
+            <div id="header_logo_ts">
+                <img id="img" width="50px" height="60px" src="../../resources/Logos/Angular_gradient.png" alt="">
+            </div>
+
+            <div id="header_title_ts">
+                Angular
+            </div>
+        </div>
+        <div>
+            <button id="hamburger" style="border: 0; background-color: transparent;padding: 5px;">
+                <img width="30px" height="30px" src="../../resources/Logos/menu_icon.svg" alt="">
+            </button>
+        </div>
+
+    </header>
+
+    <button id="cerrar" style="border: 0; background-color: transparent;padding: 5px;visibility: visible;">
+        <img id="cerrarImg" src="../../resources/Logos/cerrar.svg" alt="">
+    </button>
+
+    <nav id="hamburger_items" style="visibility: hidden;">
+        <h1>lista de temas</h1>
+        <br><br>
+        <a href="Que_Es.html"><button class="h2-drop" data-target="menu1">
+                <div class="arrow-1"></div>
+                <h2>Introducción</h2>
+            </button></a>
+        <button class="h2-drop" data-target="menu1">
+            <div class="arrow-1"></div>
+            <h2>Características</h2>
+        </button>
+        <menu id="menu1">
+            <a href="../ts/ManejoDeVariables.html">
+                <li>Componentes</li>
+            </a>
+            <a href="../ts/ManejoDeVariables.html">
+                <li>Templates</li>
+            </a>
+            <a href="ManejoDeVariables.html#sintaxis">
+                <li>Dependency Injection</li>
+            </a>
+            <a href="../ts/ManejoDeVariables.html">
+                <li>RxJS:</li>
+            </a>
+
+        </menu>
+        <button class="h2-drop" data-target="menu2">
+            <div class="arrow-1"></div>
+            <h2>Instalación de Angular</h2>
+        </button>
+        <menu id="menu2">
+            <a href="">
+                <li>Instalar Angular CLI</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu3">
+            <div class="arrow-1"></div>
+            <h2>Ejemplos</h2>
+        </button>
+        <menu id="menu3">
+            <a href="">
+                <li>código y estructura básica</li>
+            </a>
+            <a href="">
+                <li>componente básico</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu4">
+            <div class="arrow-1"></div>
+            <h2>Signals</h2>
+        </button>
+        <menu id="menu4">
+            <a href="">
+                <li>que son?</li>
+            </a>
+            <a href="">
+                <li>Ventajas</li>
+            </a>
+        </menu>
+
+    </nav>
+
+    <main>
+        <h1 id="h1-Start">Ejemplos</h1>
+        <br>
+        <p>A continuación se vera ejemplo de la estructura de archivos que maneja angular asi como la estructura de sus
+            componentes
+        </p>
+        <br>
+        <h1>estructura básica</h1>
+        <p>Antes de comenzar, asegúrate de tener instalados:
+            Node.js y npm: Son fundamentales para gestionar paquetes en JavaScript y ejecutar aplicaciones Node.js.
+            Puedes descargarlos desde https://nodejs.org/.
+        </p>
+        <li><span style="background-color: rgba(250, 87, 244, 0.5);">Estructura de un proyecto Angular:
+            </span></li>
+        <p>Un proyecto Angular típicamente tiene la siguiente estructura:
+        </p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
+            <code slot="code">
+mi-primera-app/
+├── e2e/
+├── node_modules/
+├── src/
+│   ├── app/
+│   │   ├── app.component.css
+│   │   ├── app.component.html
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts   
+│   │   └── app.module.ts
+│   ├── assets/
+│   ├── environments/   
+│   ├── index.html
+│   └── main.ts
+├── angular.json
+├── package.json
+└── tsconfig.json
+                
+                </code>
+        </deckgo-highlight-code>
+        <div class="parrafo">
+            en donde:
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">src:</span> Contiene el código fuente de tu
+                aplicación.</li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">app:</span> Contiene los componentes, servicios
+                y módulos principales.
+            </li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">angular.json:</span> Configura el proyecto de
+                Angular.
+            </li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">package.json:</span> Lista las dependencias del
+                proyecto.
+            </li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">tsconfig.json:</span> Configura el compilador
+                de TypeScript.
+            </li>
+        </div>
+        <br>
+        <h1>Componente básico</h1>
+        <p>a continuación se vera un ejemplo de un componente básico</p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
+            <code slot="code">
+// app.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+    title   = 'mi-primera-app';
+}                
+                </code>
+        </deckgo-highlight-code>
+        <div class="parrafo">
+            en donde:
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">@Component:</span> Decorador que define un
+                componente.
+            </li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">selector:</span> El nombre del selector CSS que
+                se usará para insertar el componente en el HTML
+            </li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">templateUrl: </span> La ruta a la plantilla
+                HTML del componente.
+
+            </li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">styleUrls:</span> La ruta a los archivos CSS
+                del componente.
+
+            </li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">title: </span> CUna propiedad del componente
+                que se muestra en la plantilla.
+
+            </li>
+        </div>
+        <div id="buttSiAnt">
+            <a href="../An/instalacionAngular.html" class="butNext">tema anterior</a>
+            <a href="../An/signals.html" class="butNext">siguiente tema</a>
+        </div>
+    </main>
+
+</body>
+<script src="../../js/ts/Que_Es.js"></script>
+
+</html>

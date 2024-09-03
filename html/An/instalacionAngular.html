@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que Es TypeScript</title>
+    <link rel="stylesheet" href="../../css/an/Que_Es.css">
+    <script type="module"
+        src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-ts">
+
+        <div>
+            <a href="../../index.html"><img width="36px" height="36px" src="../../resources/Logos/home.svg" alt=""></a>
+        </div>
+        <div class="header_logImTitl">
+            <div id="header_logo_ts">
+                <img id="img" width="50px" height="60px" src="../../resources/Logos/Angular_gradient.png" alt="">
+            </div>
+
+            <div id="header_title_ts">
+                Angular
+            </div>
+        </div>
+        <div>
+            <button id="hamburger" style="border: 0; background-color: transparent;padding: 5px;">
+                <img width="30px" height="30px" src="../../resources/Logos/menu_icon.svg" alt="">
+            </button>
+        </div>
+
+    </header>
+
+    <button id="cerrar" style="border: 0; background-color: transparent;padding: 5px;visibility: visible;">
+        <img id="cerrarImg" src="../../resources/Logos/cerrar.svg" alt="">
+    </button>
+
+    <nav id="hamburger_items" style="visibility: hidden;">
+        <h1>lista de temas</h1>
+        <br><br>
+        <a href="Que_Es.html"><button class="h2-drop" data-target="menu1">
+                <div class="arrow-1"></div>
+                <h2>Introducción</h2>
+            </button></a>
+        <button class="h2-drop" data-target="menu1">
+            <div class="arrow-1"></div>
+            <h2>Características</h2>
+        </button>
+        <menu id="menu1">
+            <a href="../ts/ManejoDeVariables.html">
+                <li>Componentes</li>
+            </a>
+            <a href="../ts/ManejoDeVariables.html">
+                <li>Templates</li>
+            </a>
+            <a href="ManejoDeVariables.html#sintaxis">
+                <li>Dependency Injection</li>
+            </a>
+            <a href="../ts/ManejoDeVariables.html">
+                <li>RxJS:</li>
+            </a>
+
+        </menu>
+        <button class="h2-drop" data-target="menu2">
+            <div class="arrow-1"></div>
+            <h2>Instalación de Angular</h2>
+        </button>
+        <menu id="menu2">
+            <a href="">
+                <li>Instalar Angular CLI</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu3">
+            <div class="arrow-1"></div>
+            <h2>Ejemplos</h2>
+        </button>
+        <menu id="menu3">
+            <a href="">
+                <li>código y estructura básica</li>
+            </a>
+            <a href="">
+                <li>componente básico</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu4">
+            <div class="arrow-1"></div>
+            <h2>Signals</h2>
+        </button>
+        <menu id="menu4">
+            <a href="">
+                <li>que son?</li>
+            </a>
+            <a href="">
+                <li>Ventajas</li>
+            </a>
+        </menu>
+
+    </nav>
+
+    <main>
+        <h1 id="h1-Start">Instalacion Angular</h1>
+        <br>
+        <p>A continuacion se vera la manera de instalar angular paso a paso
+        </p>
+        <br>
+        <h1>Instalar desde cli</h1>
+        <p>Antes de comenzar, asegúrate de tener instalados:
+            Node.js y npm: Son fundamentales para gestionar paquetes en JavaScript y ejecutar aplicaciones Node.js.
+            Puedes descargarlos desde https://nodejs.org/.
+        </p>
+        <li><span style="background-color: rgba(250, 87, 244, 0.5);">primer paso </span></li>
+        <p>La Angular CLI (Command Line Interface) es una herramienta esencial para crear y gestionar proyectos Angular.
+            Instálala globalmente ejecutando el siguiente comando en tu terminal:
+        </p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
+            <code slot="code">
+npm install -g @angular/cli               
+                </code>
+        </deckgo-highlight-code>
+        <li><span style="background-color: rgba(250, 87, 244, 0.5);">segundo paso</span></li>
+        <p>Una vez instalada la CLI, puedes crear un nuevo proyecto Angular con un solo comando. Por ejemplo, para crear
+            un proyecto llamado "mi-primera-app":
+        </p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
+            <code slot="code">
+ng new mi-primera-app              
+                </code>
+        </deckgo-highlight-code>
+        <p>Esto creará una estructura de proyecto completa con todos los archivos necesarios para comenzar.</p>
+        <li><span style="background-color: rgba(250, 87, 244, 0.5);">tercer paso</span></li>
+        <p>Para ver tu aplicación en acción, navega al directorio de tu proyecto y ejecuta el siguiente comando:
+        </p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
+            <code slot="code">
+cd mi-primera-app
+ng serve             
+                </code>
+        </deckgo-highlight-code>
+        <p>Esto iniciará un servidor de desarrollo local y abrirá tu aplicación en el navegador por defecto
+            (generalmente en http://localhost:4200/).</p>
+        <div id="buttSiAnt">
+            <a href="../An/caracteristicas.html" class="butNext">tema anterior</a>
+            <a href="../An/ejemplos.html" class="butNext">siguiente tema</a>
+        </div>
+    </main>
+
+</body>
+<script src="../../js/ts/Que_Es.js"></script>
+
+</html>

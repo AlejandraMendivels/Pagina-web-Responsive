@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que Es TypeScript</title>
+    <link rel="stylesheet" href="../../css/an/Que_Es.css">
+    <script type="module"
+        src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-ts">
+
+        <div>
+            <a href="../../index.html"><img width="36px" height="36px" src="../../resources/Logos/home.svg" alt=""></a>
+        </div>
+        <div class="header_logImTitl">
+            <div id="header_logo_ts">
+                <img id="img" width="50px" height="60px" src="../../resources/Logos/Angular_gradient.png" alt="">
+            </div>
+
+            <div id="header_title_ts">
+                Angular
+            </div>
+        </div>
+        <div>
+            <button id="hamburger" style="border: 0; background-color: transparent;padding: 5px;">
+                <img width="30px" height="30px" src="../../resources/Logos/menu_icon.svg" alt="">
+            </button>
+        </div>
+
+    </header>
+
+    <button id="cerrar" style="border: 0; background-color: transparent;padding: 5px;visibility: visible;">
+        <img id="cerrarImg" src="../../resources/Logos/cerrar.svg" alt="">
+    </button>
+
+    <nav id="hamburger_items" style="visibility: hidden;">
+        <h1>lista de temas</h1>
+        <br><br>
+        <a href="Que_Es.html"><button class="h2-drop" data-target="menu1">
+                <div class="arrow-1"></div>
+                <h2>Introducción</h2>
+            </button></a>
+        <button class="h2-drop" data-target="menu1">
+            <div class="arrow-1"></div>
+            <h2>Características</h2>
+        </button>
+        <menu id="menu1">
+            <a href="../ts/ManejoDeVariables.html">
+                <li>Componentes</li>
+            </a>
+            <a href="../ts/ManejoDeVariables.html">
+                <li>Templates</li>
+            </a>
+            <a href="ManejoDeVariables.html#sintaxis">
+                <li>Dependency Injection</li>
+            </a>
+            <a href="../ts/ManejoDeVariables.html">
+                <li>RxJS:</li>
+            </a>
+
+        </menu>
+        <button class="h2-drop" data-target="menu2">
+            <div class="arrow-1"></div>
+            <h2>Instalación de Angular</h2>
+        </button>
+        <menu id="menu2">
+            <a href="">
+                <li>Instalar Angular CLI</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu3">
+            <div class="arrow-1"></div>
+            <h2>Ejemplos</h2>
+        </button>
+        <menu id="menu3">
+            <a href="">
+                <li>código y estructura básica</li>
+            </a>
+            <a href="">
+                <li>componente básico</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu4">
+            <div class="arrow-1"></div>
+            <h2>Signals</h2>
+        </button>
+        <menu id="menu4">
+            <a href="">
+                <li>que son?</li>
+            </a>
+            <a href="">
+                <li>Ventajas</li>
+            </a>
+        </menu>
+
+    </nav>
+
+    <main>
+        <h1 id="h1-Start">características</h1>
+        <br>
+        <p>exploraremos algunas de las características más importantes de Angular que facilitan el desarrollo de
+            aplicaciones web modernas y escalables. A continuación, veremos cómo los Componentes, Templates, Dependency
+            Injection y RxJS juegan un papel crucial en la creación de aplicaciones robustas y mantenibles.
+        </p>
+        <br>
+        <h1>Componentes</h1>
+        <p>Componentes son la piedra angular de las aplicaciones en Angular. Un componente en Angular es una pieza de
+            código que encapsula una parte de la interfaz de usuario (UI) y su lógica asociada. Cada componente consta
+            de:</p>
+
+        <div class="parrafo">
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Clase:</span> Define el comportamiento del
+                componente.</li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Template:</span>Template: Define la vista o el
+                diseño del componente.</li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Estilos: </span>Estilizan la vista del
+                componente.</li>
+            <li>Un decorador @Component que proporciona metadatos sobre el componente, como su selector, template y
+                estilos</li>
+        </div>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
+            <code slot="code">
+// archivo: app.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+    title = 'Mi Aplicación Angular';
+
+    changeTitle() {
+    this.title = 'Título Cambiado';
+    }
+}                    
+                </code>
+        </deckgo-highlight-code>
+        <br>
+        <h1>Templates</h1>
+        <div class="parrafo">
+            Templates son el HTML asociado con un componente en Angular. Se encargan de definir la estructura de la
+            vista del componente y pueden incluir:
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Expresiones de datos:</span> Se utilizan para
+                mostrar datos dinámicos.</li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Directivas:</span> Son instrucciones en el
+                template que cambian el comportamiento o el aspecto del DOM (por
+                ejemplo, *ngIf para condicionales y *ngFor para bucles).</li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Binding de datos:</span> Permite que los datos
+                del componente se sincronicen con la vista. Hay diferentes tipos
+                de binding, como el binding de propiedad, el binding de evento y el two-way binding.</li>
+        </div>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="html">
+            <code slot="code">
+<!-- archivo: app.component.html -->
+<h1>{{ title }}</h1> <!-- Data Binding: muestra el valor de 'title' -->
+<button (click)="changeTitle()">Cambiar Título</button> <!-- Event Binding: llama a 'changeTitle()' al hacer clic -->  
+                </code>
+        </deckgo-highlight-code>
+        <br>
+        <h1>Dependency Injection (DI)</h1>
+        <div class="parrafo">
+            Dependency Injection (DI) es un patrón de diseño que Angular utiliza para gestionar la inyección de
+            dependencias en los componentes y servicios. Permite que los objetos (dependencias) sean inyectados en lugar
+            de ser creados directamente dentro de los componentes. Esto tiene varias ventajas:
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Facilita el testing:</span> Al permitir que las
+                dependencias se inyecten, es más fácil reemplazarlas con
+                versiones simuladas durante las pruebas.</li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Promueve la reutilización:</span> Los servicios
+                y otros objetos pueden ser compartidos entre múltiples
+                componentes.</li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Desacopla el código:</span> Los componentes y
+                servicios no están acoplados directamente a sus dependencias, lo
+                que mejora la flexibilidad y la mantenibilidad del código.</li>
+        </div>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
+            <code slot="code">
+// archivo: data.service.ts
+import { Injectable } from '@angular/core';
+
+@Injectable({
+    providedIn: 'root' // El servicio está disponible en toda la aplicación
+})
+export class DataService {
+    getData() {
+    return ['dato1', 'dato2', 'dato3'];
+    }
+}
+    
+// archivo: app.component.ts
+import { Component } from '@angular/core';
+import { DataService } from './data.service';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  data: string[];
+
+  constructor(private dataService: DataService) {
+    this.data = this.dataService.getData();
+  }
+}
+
+                </code>
+        </deckgo-highlight-code>
+        <br>
+        <h1>RxJS</h1>
+        <div>
+            RxJS (Reactive Extensions for JavaScript) es una biblioteca para programación reactiva utilizando
+            Observables. En Angular, RxJS es ampliamente utilizado para gestionar operaciones asíncronas y eventos.
+            Algunos conceptos clave de RxJS son:
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Observables:</span> Representan secuencias de
+                valores o eventos que se pueden observar y reaccionar a ellos.
+            </li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Operators:</span> Funciones que permiten
+                transformar, combinar, y manipular flujos de datos (como map, filter,
+                merge, concat, etc.).</li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Subjects:</span> Son un tipo especial de
+                Observable que también puede actuar como un Observer, permitiendo la
+                emisión de valores a múltiples suscriptores.</li>
+        </div>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
+            <code slot="code">
+                // archivo: app.component.ts
+import { Component } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  data$: Observable < string[] >;
+
+  constructor() {
+    this.data$ = of(['dato1', 'dato2', 'dato3']).pipe(
+      map(data => data.map(item => item.toUpperCase())) // Transforma los datos a mayúsculas
+    );
+  }
+}
+</code>
+        </deckgo-highlight-code>
+        <p>
+            RxJS es fundamental en Angular para manejar operaciones asíncronas, como solicitudes HTTP, y para la gestión
+            del flujo de datos en aplicaciones complejas, permitiendo un manejo eficiente y flexible de eventos y
+            estados.
+        </p>
+        <div id="buttSiAnt">
+            <a href="../An/Que_Es.html" class="butNext">tema anterior</a>
+            <a href="../An/instalacionAngular.html" class="butNext">siguiente tema</a>
+        </div>
+    </main>
+
+</body>
+<script src="../../js/ts/Que_Es.js"></script>
+
+</html>
