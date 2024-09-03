@@ -3,9 +3,10 @@
     overflow-y: hidden;
     overflow-x: hidden;
     padding: 0;
+
 }
 
-@media (width < 681px) {
+
     #logo_title {
         display: flex;
         justify-content: center;
@@ -82,4 +83,3 @@
             background-position: 0% 50%;
         }
     }
-}

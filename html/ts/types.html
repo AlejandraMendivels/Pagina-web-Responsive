@@ -127,94 +127,104 @@
     </nav>
 
     <main>
-        <h1 id="h1-Start">Clases y Métodos</h1>
+        <h1 id="h1-Start">Types</h1>
         <br>
-        <li><span style="font-weight: 1000;background-color: aqua;">Que es una clase?</span></li>
+        <li><span style="font-weight: 1000;background-color: aqua;">Que es un type?</span></li>
         <br>
-        <p>Una clase es una estructura predefinida que sirve como molde para crear Objetos. En este «molde» se
-            declaran atributos y métodos; un atributo puede ser una variable, y un método puede ser una función, si lo
-            comparamos con Javascript, a continuación se vera un ejemplo de la estructura de una clase.
+        <p>Un alias de tipo (type) permite definir un nuevo nombre para un tipo existente. Puedes usar type para crear
+            alias de tipos simples o combinados.
         </p>
+        <li><span style="font-weight: 1000;background-color: aqua;">sintaxis basica</span></li>
         <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
             <code slot="code">
-class Persona {
+type NombreTipo = TipoExistente;               
+</code>
+        </deckgo-highlight-code>
+        <li><span style="font-weight: 1000;background-color: aqua;">Ejemplo</span></li>
+
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+type Numero = number;
+type Texto = string;
+
+let edad: Numero = 30;
+let nombre: Texto = "Ana";
+                           
+</code>
+        </deckgo-highlight-code>
+        <br>
+        <h1>tipos compuestos</h1>
+
+        <p>
+            Puedes combinar tipos utilizando los operadores de unión (|), intersección (&), y tuplas.
+        </p>
+        <li><span style="font-weight: 1000;background-color: aqua;">Unión (|): Permite que una variable sea de uno de varios tipos posibles.</span></li>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+type TextoONumero = string | number;
+
+let valor: TextoONumero;
+valor = "Hola";
+valor = 123;                         
+</code>
+        </deckgo-highlight-code>
+        <li><span style="font-weight: 1000;background-color: aqua;">Intersección (&): Combina múltiples tipos en un solo tipo.</span></li>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+type Persona = {
     nombre: string;
     edad: number;
+};
 
-    constructor(nombre: string, edad: number) {
-        this.nombre = nombre;
-        this.edad = edad;
-    }
-    
-    saludar()   {
-        console.log("Hola, mi nombre es " + this.nombre);   
-    }
-}
+type Empleado = Persona & {
+    salario: number;
+};
+
+const empleado: Empleado = {
+    nombre: "Luis",
+    edad: 30,
+    salario: 3000
+};                   
+</code>
+        </deckgo-highlight-code>
+        <li><span style="font-weight: 1000;background-color: aqua;">Tuplas: Define una estructura de array con tipos específicos para cada posición.</span></li>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+type Coordenadas = [number, number];
+
+const punto: Coordenadas = [10, 20];
+                                  
 </code>
         </deckgo-highlight-code>
         <br>
-        <li><span style="font-weight: 1000;background-color: aqua;">Que es un método?</span></li>
+        <h1>Tipos Literales</h1>
+        <p>Los tipos literales permiten especificar un conjunto exacto de valores posibles para una variable.</p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+type Color = "rojo" | "verde" | "azul";
 
+let colorFavorito: Color;
+colorFavorito = "verde";
+// colorFavorito = "amarillo"; // Error: "amarillo" no es un valor válido
+                                           
+</code>
+        </deckgo-highlight-code>
         <br>
+        <h1>Tipo función</h1>
         <p>
-            Los métodos son funciones asociadas a una clase, en la definición de clase se dijo que una clase como un
-            molde para crear objetos Cada objeto creado a partir de esta clase (instancia) tendrá sus propias
-            propiedades y podrá realizar ciertas acciones. Los métodos son esas acciones específicas que un objeto puede
-            llevar a cabo como se puede ver en el siguiente ejemplo.
+            Puedes definir tipos para funciones especificando los tipos de los parámetros y el tipo de retorno.   
         </p>
         <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
             <code slot="code">
-class Coche {
-    color: string;
-    modelo: string;
+type Suma = (a: number, b: number) => number;
 
-    constructor(color: string, modelo: string) {
-        this.color = color;
-        this.modelo = modelo;
-    }
-
-    acelerar() {
-        console.log("El coche está acelerando");
-    }
-
-    frenar() {
-        console.log("El coche está frenando");
-    }
-}
-
-// Creamos dos instancias de la clase Coche
-let coche1 = new Coche("rojo", "Ferrari");
-let coche2 = new Coche("azul", "Ford");
-
-// Llamamos a los métodos de cada instancia
-coche1.acelerar(); // Imprime: El coche está acelerando
-coche2.frenar();   // Imprime: El coche está frenando
+const sumar: Suma = (a, b) => a + b;
+                                                       
 </code>
         </deckgo-highlight-code>
-        <div class="parrafo">
-            En este ejemplo:
-            <li>Clase <span style="background-color: greenyellow;">Coche:</span> Define un molde para crear objetos tipo
-                coche, con propiedades como color y modelo.</li>
-            <li>Métodos <span style="background-color: orange;"> acelerar()</span> y <span
-                    style="background-color: orange;">frenar()</span>: Son acciones que un coche puede realizar. Están
-                asociados a la clase Coche,
-                por lo que cualquier objeto creado a partir de esta clase podrá utilizar estos métodos.</li>
-            <li>Instancias <span style="background-color: rosybrown;">coche1</span> y <span
-                    style="background-color: rosybrown;">coche2</span>: Son objetos concretos creados a partir de la
-                clase Coche. Cada uno tiene sus
-                propias propiedades (color y modelo) y pueden utilizar los mismos métodos (acelerar y frenar).</li>
-        </div>
-        <br>
-        <h1>Por que son importantes los métodos en las clases</h1>
-        <br>
-        <div class="parrafo">
-            <li>Encapsulación: Los métodos permiten encapsular la lógica interna de un objeto, ocultando la implementación y exponiendo solo la funcionalidad necesaria.</li>
-            <li>Reutilización de código: Un mismo método puede ser utilizado por múltiples instancias de una clase, evitando la duplicación de código.</li>
-            <li>Programación orientada a objetos: Los métodos son fundamentales para el paradigma de la programación orientada a objetos, ya que permiten modelar el comportamiento de los objetos de manera natural.</li>
-        </div>
         <div id="buttSiAnt">
-            <a href="../ts/ManejoDeVariables.html" class="butNext"> tema anterior</a>
-            <a href="../ts/interfaces.html" class="butNext">siguiente tema</a>
+            <a href="../ts/interfaces.html" class="butNext"> tema anterior</a>
+            <a href="../ts/conceptosBasicos.html" class="butNext">siguiente tema</a>
         </div>
     </main>
 

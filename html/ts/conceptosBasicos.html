@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que Es TypeScript</title>
+    <link rel="stylesheet" href="../../css/ts/Que_Es.css">
+    <script type="module"
+        src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-ts">
+
+        <div>
+            <a href="../../index.html"><img width="36px" height="36px" src="../../resources/Logos/home.svg" alt=""></a>
+        </div>
+        <div class="header_logImTitl">
+            <div id="header_logo_ts">
+                <img id="img" width="50px" height="60px" src="../../resources/Logos/TYPE SCRIPT LOGO.png" alt="">
+            </div>
+
+            <div id="header_title_ts">
+                TypeScript
+            </div>
+        </div>
+        <div>
+            <button id="hamburger" style="border: 0; background-color: transparent;padding: 5px;">
+                <img width="30px" height="30px" src="../../resources/Logos/menu_icon.svg" alt="">
+            </button>
+        </div>
+
+    </header>
+
+    <button id="cerrar" style="border: 0; background-color: transparent;padding: 5px;visibility: visible;">
+        <img id="cerrarImg" src="../../resources/Logos/cerrar.svg" alt="">
+    </button>
+
+    <nav id="hamburger_items" style="visibility: hidden;">
+        <h1>lista de temas</h1>
+        <a href="Que_Es.html"><button class="h2-drop" data-target="menu1">
+                <div class="arrow-1"></div>
+                <h2>Introducción</h2>
+            </button>
+        </a>
+        <button class="h2-drop" data-target="menu1">
+            <div class="arrow-1"></div>
+            <h2>Manejo de variables</h2>
+        </button>
+        <menu id="menu1">
+            <a href="../ts/ManejoDeVariables.html">
+                <li>Que es una variable</li>
+            </a>
+            <a href="">
+                <li>Tipado</li>
+            </a>
+            <a href="">
+                <li>Sintaxis</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu2">
+            <div class="arrow-1"></div>
+            <h2>Clases y métodos</h2>
+        </button>
+        <menu id="menu2">
+            <a href="">
+                <li>que es una clase?</li>
+            </a>
+            <a href="">
+                <li>que es un método</li>
+            </a>
+            <a href="">
+                <li>¿Qué significa que un método esté asociado a una clase?</li>
+            </a>
+            <a href="">
+                <li>¿Por qué son importantes los métodos en las clases?</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu3">
+            <div class="arrow-1"></div>
+            <h2>interfaces</h2>
+        </button>
+        <menu id="menu3">
+            <a href="">
+                <li>que son?</li>
+            </a>
+            <a href="">
+                <li>casos de uso</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu4">
+            <div class="arrow-1"></div>
+            <h2>types</h2>
+        </button>
+        <menu id="menu4">
+            <a href="">
+                <li>que son?</li>
+            </a>
+            <a href="">
+                <li>tipos de types que se utilizan</li>
+            </a>
+            <a href="">
+                <li>explicito e implícito</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu5">
+            <div class="arrow-1"></div>
+            <h2>Conceptos Básicos</h2>
+        </button>
+        <menu id="menu5">
+            <a href="">
+                <li>Ciclos</li>
+            </a>
+            <a href="">
+                <li>Condicionales</li>
+            </a>
+            <a href="">
+                <li>Métodos y Funciones</li>
+            </a>
+            <a href="">
+                <li>Arrays</li>
+            </a>
+        </menu>
+    </nav>
+
+    <main>
+        <h1 id="h1-Start">Conceptos Básicos</h1>
+
+        <p>
+            a continuación se mostrara los conceptos básicos de typescript,conceptos tales como
+            ciclos,condicionales,métodos y funciones etc, los cuales son esenciales para el trabajo de este lenguaje de
+            programación
+        </p>
+        <br>
+        <h1>Ciclos</h1>
+        <li><span style="font-weight: 1000;background-color: aqua;">For</span></li>
+        <p>
+            El ciclo for se utiliza cuando se conoce de antemano el número de iteraciones que se deben realizar.
+            Generalmente se usa para iterar sobre una secuencia de valores, como los elementos de una lista o los
+            números en un rango.
+        </p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}                            
+</code>
+        </deckgo-highlight-code>
+        <li><span style="font-weight: 1000;background-color: aqua;">while</span></li>
+        <p>El ciclo while se utiliza cuando el número de iteraciones no se conoce de antemano y el ciclo debe continuar
+            mientras se cumpla una condición.</p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+let i = 0;
+while (i < 10) {
+    console.log(i);
+    i++;
+}
+                                    
+</code>
+        </deckgo-highlight-code>
+        <li><span style="font-weight: 1000;background-color: aqua;">Do-While</span></li>
+        <p>El ciclo do-while es similar al while, pero la condición se evalúa después de que el código dentro del ciclo
+            se ha ejecutado. Esto asegura que el código dentro del ciclo se ejecute al menos una vez.</p>
+        <br>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+let i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 10);
+                                              
+</code>
+        </deckgo-highlight-code>
+        <br>
+        <h1>condicionales</h1>
+
+        <p>
+            Los condicionales permiten a los programas tomar decisiones basadas en ciertas condiciones. Aquí se explica
+            los condicionales más comunes en TypeScript, junto con ejemplos: </p>
+        <li><span style="font-weight: 1000;background-color: aqua;">if</span></li>
+        <p>El condicional if se utiliza para ejecutar un bloque de código si se cumple una condición.</p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+if (condición) {
+    // Código a ejecutar si la condición es verdadera
+} 
+//ejemplo
+const num = 10;
+if (num > 5) {
+    console.log("El número es mayor que 5.");
+}
+
+</code>
+        </deckgo-highlight-code>
+        <li><span style="font-weight: 1000;background-color: aqua;">if-else</span></li>
+        <p>El condicional if-else permite ejecutar un bloque de código si la condición es verdadera y otro bloque si es
+            falsa.</p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+const num = 3;
+if (num > 5) {
+    console.log("El número es mayor que 5.");
+} else {
+    console.log("El número no es mayor que 5.");
+}              
+</code>
+        </deckgo-highlight-code>
+        <li><span style="font-weight: 1000;background-color: aqua;">switch</span></li>
+        <p>El condicional switch se utiliza para realizar múltiples comprobaciones en una sola variable. Es útil cuando
+            se tienen muchas condiciones basadas en el mismo valor.</p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+const color = "rojo";
+switch (color) {
+    case "rojo":
+        console.log("El color es rojo.");
+        break;
+    case "verde":
+        console.log("El color es verde.");
+        break;
+    case "azul":
+        console.log("El color es azul.");
+        break;
+    default:
+        console.log("Color desconocido.");
+}                               
+</code>
+        </deckgo-highlight-code>
+        <br>
+        <h1>Funciones y Metodos</h1>
+        <li><span style="font-weight: 1000;background-color: aqua;">función</span></li>
+        <p>Las funciones en TypeScript son bloques de código reutilizables que realizan una tarea específica. Se definen
+            con la palabra clave function y pueden aceptar parámetros y devolver valores.</p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+function saludar(nombre: string): string {
+    return `Hola, ${nombre}!`;
+}
+
+const mensaje = saludar("Juan");
+console.log(mensaje);  // Imprime: Hola, Juan!                                                  
+</code>
+        </deckgo-highlight-code>
+        <li><span style="font-weight: 1000;background-color: aqua;">Funciones Anónimas y Lambda</span></li>
+        <p>Las funciones anónimas son funciones sin nombre y se pueden definir usando la sintaxis de función flecha
+            (=>).</p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+const suma = (a: number, b: number): number => {
+    return a + b;
+}
+
+const resultado = suma(5, 3);
+console.log(resultado);  // Imprime: 8                                                 
+</code>
+        </deckgo-highlight-code>
+        <li><span style="font-weight: 1000;background-color: aqua;">Métodos/span></li>
+        <p>En TypeScript, un método es una función que está asociada a un objeto, generalmente dentro de una clase. Los
+            métodos definen el comportamiento de los objetos creados a partir de una clase.</p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+class Persona {
+    nombre: string;
+
+    constructor(nombre: string) {
+        this.nombre = nombre;
+    }
+
+    saludar(): string {
+        return `Hola, soy ${this.nombre}`;
+    }
+}                                                              
+    </code>
+        </deckgo-highlight-code>
+        <li><span style="font-weight: 1000;background-color: aqua;">Uso de métodos</span></li>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+const persona = new Persona("Ana");
+console.log(persona.saludar());  // Imprime: Hola, soy Ana                                                                                
+    </code>
+        </deckgo-highlight-code>
+        <h1>Arrays</h1>
+        <p>
+            los arrays (o arreglos) son colecciones de elementos del mismo tipo que se almacenan en una secuencia
+            ordenada. Los arrays son muy útiles para manejar listas de datos. A continuación, se explica cómo trabajar
+            con arrays en TypeScript con ejemplos:
+        </p>
+        <li><span style="font-weight: 1000;background-color: aqua;">sintaxis de un array</span></li>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+let numeros: number[] = [1, 2, 3, 4, 5];
+let nombres: Array<string> = ["Ana", "Luis", "Carlos"];                                                       
+</code>
+        </deckgo-highlight-code>
+        <li><span style="font-weight: 1000;background-color: aqua;">acceso a elementos</span></li>
+        <p>Puedes acceder a los elementos de un array utilizando índices. Los índices en los arrays son cero-basados.</p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+let colores: string[] = ["rojo", "verde", "azul"];
+console.log(colores[0]);  // Imprime: rojo
+console.log(colores[2]);  // Imprime: azul                                                  
+</code>
+        </deckgo-highlight-code>
+        <li><span style="font-weight: 1000;background-color: aqua;">Modificación de Elementos</span></li>
+        <p>Puedes modificar los elementos de un array asignando un nuevo valor a un índice específico.</p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+let frutas: string[] = ["manzana", "banana", "naranja"];
+frutas[1] = "kiwi";
+console.log(frutas);  // Imprime: ["manzana", "kiwi", "naranja"]                                   
+</code>
+        </deckgo-highlight-code>
+        <li><span style="font-weight: 1000;background-color: aqua;">Métodos de Arrays</span></li>
+        <p>Los arrays en TypeScript tienen muchos métodos útiles. Aquí algunos ejemplos:</p>
+        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+            <code slot="code">
+push(): //Añade uno o más elementos al final del array.
+let numeros: number[] = [1, 2, 3];
+numeros.push(4);  // Añade 4 al final
+console.log(numeros);  // Imprime: [1, 2, 3, 4]
+
+pop(): //Elimina y devuelve el último elemento del array.
+numeros.pop();  // Elimina el último elemento
+console.log(numeros);  // Imprime: [1, 2, 3]
+
+shift(): //Elimina y devuelve el primer elemento del array.
+let letras: string[] = ["b", "c", "d"];
+letras.unshift("a");  // Añade 'a' al principio
+console.log(letras);  // Imprime: ["a", "b", "c", "d"]
+
+unshift(): //Añade uno o más elementos al principio del array.
+letras.shift();  // Elimina el primer elemento
+console.log(letras);  // Imprime: ["b", "c", "d"]
+
+forEach()//: Ejecuta una función para cada elemento del array.
+let numeros: number[] = [1, 2, 3, 4, 5];
+numeros.forEach(num => console.log(num * 2));  // Imprime: 2 4 6 8 10
+
+                                                 
+</code>
+        </deckgo-highlight-code>
+        <div id="buttSiAnt">
+            <a href="../ts/interfaces.html" class="butNext"> tema anterior</a>
+            <a href="../ts/conceptosBasicos.html" class="butNext">siguiente tema</a>
+        </div>
+    </main>
+
+</body>
+<script src="../../js/ts/Que_Es.js"></script>
+
+</html>
