@@ -6,14 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Que Es TypeScript</title>
     <link rel="stylesheet" href="../../css/ts/Que_Es.css">
-    <link href="https://{{cdn}}/prismjs@v1.x/themes/prism.css" rel="stylesheet" />
+    <script type="module"
+        src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
-
-    <script>hljs.highlightAll();</script>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -44,26 +40,181 @@
     </button>
 
     <nav id="hamburger_items" style="visibility: hidden;">
-        <div>¿Qué significa que un método esté asociado a una clase?</div>
-        <div>como</div>
-        <div>estas</div>
+        <h1>lista de temas</h1>
+        <button class="h2-drop" data-target="menu1">
+            <div class="arrow-1"></div><h2>flecha Manejo de variables</h2>
+        </button>
+        <menu id="menu1">
+            <a href="">
+                <li>Que es una variable</li>
+            </a>
+            <a href="">
+                <li>Tipado</li>
+            </a>
+            <a href="">
+                <li>Sintaxis</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu2">
+            <div class="arrow-1"></div><h2>Clases y métodos</h2>
+        </button>
+        <menu id="menu2">
+            <a href="">
+                <li>que es una clase?</li>
+            </a>
+            <a href="">
+                <li>que es un método</li>
+            </a>
+            <a href="">
+                <li>¿Qué significa que un método esté asociado a una clase?</li>
+            </a>
+            <a href="">
+                <li>¿Por qué son importantes los métodos en las clases?</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu3">
+            <div class="arrow-1"></div><h2>interfaces</h2>
+        </button>
+        <menu id="menu3">
+            <a href="">
+                <li>que son?</li>
+            </a>
+            <a href="">
+                <li>casos de uso</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu4">
+            <div class="arrow-1"></div><h2>types</h2>
+        </button>
+        <menu id="menu4">
+            <a href="">
+                <li>que son?</li>
+            </a>
+            <a href="">
+                <li>tipos de types que se utilizan</li>
+            </a>
+            <a href="">
+                <li>explicito e implícito</li>
+            </a>
+        </menu>
+        <button  class="h2-drop" data-target="menu5">
+            <div class="arrow-1"></div><h2>Conceptos Básicos</h2>
+        </button>
+        <menu id="menu5">
+            <a href="">
+                <li>Ciclos</li>
+            </a>
+            <a href="">
+                <li>Condicionales</li>
+            </a>
+            <a href="">
+                <li>Métodos y Funciones</li>
+            </a>
+            <a href="">
+                <li>Arrays</li>
+            </a>
+        </menu>
     </nav>
 
     <main>
-        <h1 style="text-align: center; padding: 10px;">Que es TypeScript</h1>
-        <p style="padding: 10px; text-align: justify; ">TypeScript es un superconjunto tipado de JavaScript que compila
+        <h1 id="h1-Start">Que es TypeScript</h1>
+        <br>
+        <p>TypeScript es un superconjunto tipado de JavaScript que compila
             a JavaScript plano. Agrega características
             como tipado estático, clases, interfaces y módulos, lo que facilita la creación de aplicaciones a gran
             escala.
         </p>
-        <code>
-            let variable = hola;
-        </code>
+        <br>
+        <h1>Temas a ver en typeScript</h1>
+
+        <br>
+        <button class="h2-drop" data-target="menu6">
+            <div class="arrow-1"></div><h2>flecha Manejo de variables</h2>
+        </button>
+        <menu id="menu6">
+            <a href="">
+                <li>Que es una variable</li>
+            </a>
+            <a href="">
+                <li>Tipado</li>
+            </a>
+            <a href="">
+                <li>Sintaxis</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu7">
+            <div class="arrow-1"></div><h2>Clases y métodos</h2>
+        </button>
+        <menu id="menu7">
+            <a href="">
+                <li>que es una clase?</li>
+            </a>
+            <a href="">
+                <li>que es un método</li>
+            </a>
+            <a href="">
+                <li>¿Qué significa que un método esté asociado a una clase?</li>
+            </a>
+            <a href="">
+                <li>¿Por qué son importantes los métodos en las clases?</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu8">
+            <div class="arrow-1"></div><h2>interfaces</h2>
+        </button>
+        <menu id="menu8">
+            <a href="">
+                <li>que son?</li>
+            </a>
+            <a href="">
+                <li>casos de uso</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu9">
+            <div class="arrow-1"></div><h2>types</h2>
+        </button>
+        <menu id="menu9">
+            <a href="">
+                <li>que son?</li>
+            </a>
+            <a href="">
+                <li>tipos de types que se utilizan</li>
+            </a>
+            <a href="">
+                <li>explicito e implícito</li>
+            </a>
+        </menu>
+        <button class="h2-drop" data-target="menu10">
+            <div class="arrow-1"></div><h2>Conceptos Básicos</h2>
+        </button>
+        <menu id="menu10">
+            <a href="">
+                <li>Ciclos</li>
+            </a>
+            <a href="">
+                <li>Condicionales</li>
+            </a>
+            <a href="">
+                <li>Métodos y Funciones</li>
+            </a>
+            <a href="">
+                <li>Arrays</li>
+            </a>
+        </menu>
+        <br>
+        <p>
+            ¡Comienza a explorar TypeScript con nosotros! TypeScript, con su tipado estático, clases, interfaces y
+            módulos, no solo amplía las capacidades de JavaScript, sino que también optimiza la creación de aplicaciones
+            robustas y escalables. Con TypeScript, cada proyecto puede beneficiarse de un código más seguro y
+            estructurado. ¡Sigue innovando y construyendo con confianza!
+        </p>
+        <div id="buttSiAnt">
+            <button style="position: sticky;"> siguiente tema</button>
+            <button style="position: sticky;"> siguiente tema</button>
+        </div>
     </main>
 
 </body>
 <script src="../../js/ts/Que_Es.js"></script>
-<script src="https://{{cdn}}/prismjs@v1.x/components/prism-core.min.js"></script>
-<script src="https://{{cdn}}/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
 
 </html>
