@@ -43,7 +43,19 @@ document.querySelectorAll('.h2-drop').forEach(button => {
 });
 
 //scroll ID
-setTimeout(()=>{
-  id = window.location.hash.substring(1);
-  document.getElementById(id).scrollIntoView({behavior: 'smooth'});
-},200)
+// setTimeout(()=>{
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    id = window.location.hash.substring(1);
+
+    if (id) {
+      document.getElementById(id).scrollIntoView({
+        block: 'center'
+      })
+    }
+  }, 200)
+
+})
+
+
+

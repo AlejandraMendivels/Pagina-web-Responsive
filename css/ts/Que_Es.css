@@ -7,9 +7,11 @@
     line-height: 24px;
     font-style: normal;
 }
-/* html {
+ html {
     scroll-behavior: smooth;
-} */
+} 
+
+
 /* 
 @media (width < 681px) { */
     a {
@@ -41,7 +43,11 @@
 
     li {
         margin-top: 8px;
-        margin-left: 4px
+        margin-left: 4px;
+     
+    }
+    nav li{
+        width: 80%;
     }
 
     h1 {
@@ -96,6 +102,8 @@
     #menu2.open,
     #menu7.open {
         height: 130px;
+
+    
     }
 
     #menu3.open{
@@ -106,14 +114,18 @@
         height: 80px;
     }
 
-    #menu5.open,
+  
     #menu9.open {
-        height: 130px;
-        margin-bottom: 68px;
+        height: 80px;
+        
     }
-
-    #menu10.open {
+    #menu5.open {
         height: 134px;
+        margin-bottom: 14%;
+    }
+    #menu10.open{
+        height: 134px;
+    
     }
 
     #buttSiAnt {
@@ -159,6 +171,7 @@
     }
 
     .header_logImTitl {
+        
         display: flex;
         flex-direction: row;
         justify-content: space-between;

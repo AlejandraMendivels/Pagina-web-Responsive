@@ -41,86 +41,77 @@
 
     <nav id="hamburger_items" style="visibility: hidden;">
         <h1>lista de temas</h1>
+        <br><br>
         <a href="Que_Es.html"><button class="h2-drop" data-target="menu1">
-                <div class="arrow-1"></div>
-                <h2>Introducción</h2>
-            </button>
-        </a>
-        <button class="h2-drop" data-target="menu1">
             <div class="arrow-1"></div>
-            <h2>Manejo de variables</h2>
+            <h2>Introducción</h2>
+        </button>
+    </a>
+        <button class="h2-drop" data-target="menu1">
+            <div class="arrow-1"></div><h2>Manejo de variables</h2>
         </button>
         <menu id="menu1">
             <a href="../ts/ManejoDeVariables.html">
                 <li>Que es una variable</li>
             </a>
-            <a href="">
+            <a href="../ts/ManejoDeVariables.html">
                 <li>Tipado</li>
             </a>
-            <a href="">
+            <a href="../ts/ManejoDeVariables.html#sintaxis">
                 <li>Sintaxis</li>
             </a>
         </menu>
         <button class="h2-drop" data-target="menu2">
-            <div class="arrow-1"></div>
-            <h2>Clases y métodos</h2>
+            <div class="arrow-1"></div><h2>Clases y métodos</h2>
         </button>
         <menu id="menu2">
-            <a href="">
+            <a href="clasesYmetodos.html">
                 <li>que es una clase?</li>
             </a>
-            <a href="">
+            <a href="clasesYmetodos.html#metodo">
                 <li>que es un método</li>
             </a>
-            <a href="">
-                <li>¿Qué significa que un método esté asociado a una clase?</li>
-            </a>
-            <a href="">
+            <a href="clasesYmetodos.html#impMet">
                 <li>¿Por qué son importantes los métodos en las clases?</li>
             </a>
         </menu>
         <button class="h2-drop" data-target="menu3">
-            <div class="arrow-1"></div>
-            <h2>interfaces</h2>
+            <div class="arrow-1"></div><h2>interfaces</h2>
         </button>
         <menu id="menu3">
-            <a href="">
+            <a href="interfaces.html">
                 <li>que son?</li>
             </a>
-            <a href="">
+            <a href="interfaces.html#casUs">
                 <li>casos de uso</li>
             </a>
         </menu>
         <button class="h2-drop" data-target="menu4">
-            <div class="arrow-1"></div>
-            <h2>types</h2>
+            <div class="arrow-1"></div><h2>types</h2>
         </button>
         <menu id="menu4">
-            <a href="">
+            <a href="types.html">
                 <li>que son?</li>
             </a>
-            <a href="">
-                <li>tipos de types que se utilizan</li>
+            <a href="types.html#tipos">
+                <li>tipos compuesto,literal,función</li>
             </a>
-            <a href="">
-                <li>explicito e implícito</li>
-            </a>
+           
         </menu>
-        <button class="h2-drop" data-target="menu5">
-            <div class="arrow-1"></div>
-            <h2>Conceptos Básicos</h2>
+        <button  class="h2-drop" data-target="menu5">
+            <div class="arrow-1"></div><h2>Conceptos Básicos</h2>
         </button>
         <menu id="menu5">
-            <a href="">
+            <a href="conceptosBasicos.html#cerrar">
                 <li>Ciclos</li>
             </a>
-            <a href="">
+            <a href="conceptosBasicos.html#condicional">
                 <li>Condicionales</li>
             </a>
-            <a href="">
+            <a href="conceptosBasicos.html#metYfun">
                 <li>Métodos y Funciones</li>
             </a>
-            <a href="">
+            <a href="conceptosBasicos.html#array">
                 <li>Arrays</li>
             </a>
         </menu>
@@ -177,7 +168,7 @@ do {
 </code>
         </deckgo-highlight-code>
         <br>
-        <h1>condicionales</h1>
+        <h1 id="condicional">condicionales</h1>
 
         <p>
             Los condicionales permiten a los programas tomar decisiones basadas en ciertas condiciones. Aquí se explica
@@ -232,7 +223,7 @@ switch (color) {
 </code>
         </deckgo-highlight-code>
         <br>
-        <h1>Funciones y Metodos</h1>
+        <h1 id="metYfun">Funciones y Metodos</h1>
         <li><span style="font-weight: 1000;background-color: aqua;">función</span></li>
         <p>Las funciones en TypeScript son bloques de código reutilizables que realizan una tarea específica. Se definen
             con la palabra clave function y pueden aceptar parámetros y devolver valores.</p>
@@ -284,7 +275,7 @@ const persona = new Persona("Ana");
 console.log(persona.saludar());  // Imprime: Hola, soy Ana                                                                                
     </code>
         </deckgo-highlight-code>
-        <h1>Arrays</h1>
+        <h1 id="array">Arrays</h1>
         <p>
             los arrays (o arreglos) son colecciones de elementos del mismo tipo que se almacenan en una secuencia
             ordenada. Los arrays son muy útiles para manejar listas de datos. A continuación, se explica cómo trabajar

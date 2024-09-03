@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="header-ts">
+     <header class="header-ts">
 
         <div>
             <a href="../../index.html"><img width="36px" height="36px" src="../../resources/Logos/home.svg" alt=""></a>
@@ -33,7 +33,7 @@
             </button>
         </div>
 
-    </header>
+    </header> 
 
     <button id="cerrar" style="border: 0; background-color: transparent;padding: 5px;visibility: visible;">
         <img id="cerrarImg" src="../../resources/Logos/cerrar.svg" alt="">
@@ -41,86 +41,77 @@
 
     <nav id="hamburger_items" style="visibility: hidden;">
         <h1>lista de temas</h1>
+        <br><br>
         <a href="Que_Es.html"><button class="h2-drop" data-target="menu1">
-                <div class="arrow-1"></div>
-                <h2>Introducción</h2>
-            </button>
-        </a>
-        <button class="h2-drop" data-target="menu1">
             <div class="arrow-1"></div>
-            <h2>Manejo de variables</h2>
+            <h2>Introducción</h2>
+        </button>
+    </a>
+        <button class="h2-drop" data-target="menu1">
+            <div class="arrow-1"></div><h2>Manejo de variables</h2>
         </button>
         <menu id="menu1">
             <a href="../ts/ManejoDeVariables.html">
                 <li>Que es una variable</li>
             </a>
-            <a href="">
+            <a href="../ts/ManejoDeVariables.html">
                 <li>Tipado</li>
             </a>
-            <a href="">
+            <a href="../ts/ManejoDeVariables.html#sintaxis">
                 <li>Sintaxis</li>
             </a>
         </menu>
         <button class="h2-drop" data-target="menu2">
-            <div class="arrow-1"></div>
-            <h2>Clases y métodos</h2>
+            <div class="arrow-1"></div><h2>Clases y métodos</h2>
         </button>
         <menu id="menu2">
-            <a href="">
+            <a href="clasesYmetodos.html#cerrar">
                 <li>que es una clase?</li>
             </a>
-            <a href="">
+            <a href="clasesYmetodos.html#metodo">
                 <li>que es un método</li>
             </a>
-            <a href="">
-                <li>¿Qué significa que un método esté asociado a una clase?</li>
-            </a>
-            <a href="">
+            <a href="clasesYmetodos.html#impMet">
                 <li>¿Por qué son importantes los métodos en las clases?</li>
             </a>
         </menu>
         <button class="h2-drop" data-target="menu3">
-            <div class="arrow-1"></div>
-            <h2>interfaces</h2>
+            <div class="arrow-1"></div><h2>interfaces</h2>
         </button>
         <menu id="menu3">
-            <a href="">
+            <a href="interfaces.html">
                 <li>que son?</li>
             </a>
-            <a href="">
+            <a href="interfaces.html#casUs">
                 <li>casos de uso</li>
             </a>
         </menu>
         <button class="h2-drop" data-target="menu4">
-            <div class="arrow-1"></div>
-            <h2>types</h2>
+            <div class="arrow-1"></div><h2>types</h2>
         </button>
         <menu id="menu4">
-            <a href="">
+            <a href="types.html">
                 <li>que son?</li>
             </a>
-            <a href="">
-                <li>tipos de types que se utilizan</li>
+            <a href="types.html#tipos">
+                <li>tipos compuesto,literal,función</li>
             </a>
-            <a href="">
-                <li>explicito e implícito</li>
-            </a>
+           
         </menu>
-        <button class="h2-drop" data-target="menu5">
-            <div class="arrow-1"></div>
-            <h2>Conceptos Básicos</h2>
+        <button  class="h2-drop" data-target="menu5">
+            <div class="arrow-1"></div><h2>Conceptos Básicos</h2>
         </button>
         <menu id="menu5">
-            <a href="">
+            <a href="conceptosBasicos.html">
                 <li>Ciclos</li>
             </a>
-            <a href="">
+            <a href="conceptosBasicos.html#condicionales">
                 <li>Condicionales</li>
             </a>
-            <a href="">
+            <a href="conceptosBasicos.html#metYfun">
                 <li>Métodos y Funciones</li>
             </a>
-            <a href="">
+            <a href="conceptosBasicos.html#array">
                 <li>Arrays</li>
             </a>
         </menu>
@@ -135,7 +126,7 @@
             declaran atributos y métodos; un atributo puede ser una variable, y un método puede ser una función, si lo
             comparamos con Javascript, a continuación se vera un ejemplo de la estructura de una clase.
         </p>
-        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
+                <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px;" language="ts">
             <code slot="code">
 class Persona {
     nombre: string;
@@ -151,9 +142,9 @@ class Persona {
     }
 }
 </code>
-        </deckgo-highlight-code>
-        <br>
-        <li><span style="font-weight: 1000;background-color: aqua;">Que es un método?</span></li>
+        </deckgo-highlight-code> 
+      <br>
+        <li id="metodo" ><span style="font-weight: 1000;background-color: aqua;">Que es un método?</span></li>
 
         <br>
         <p>
@@ -205,7 +196,7 @@ coche2.frenar();   // Imprime: El coche está frenando
                 propias propiedades (color y modelo) y pueden utilizar los mismos métodos (acelerar y frenar).</li>
         </div>
         <br>
-        <h1>Por que son importantes los métodos en las clases</h1>
+        <h1 id="impMet">Por que son importantes los métodos en las clases</h1>
         <br>
         <div class="parrafo">
             <li>Encapsulación: Los métodos permiten encapsular la lógica interna de un objeto, ocultando la implementación y exponiendo solo la funcionalidad necesaria.</li>
