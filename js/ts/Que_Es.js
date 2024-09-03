@@ -50,7 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (id) {
       document.getElementById(id).scrollIntoView({
-        block: 'center'
+        block: 'center',
+        inline: 'center'
       })
     }
   }, 200)
