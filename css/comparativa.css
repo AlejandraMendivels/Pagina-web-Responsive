@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Reem Kufi Fun", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 24px;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+ 
+}
+
+/* 
+@media (width < 681px) { */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    padding: 10px;
+    text-align: justify;
+    background-color: rgba(152, 149, 149, 0.504);
+    font-family: "Reem Kufi Fun", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 24px;
+    font-style: normal;
+    margin-top: 8px;
+
+}
+
+.parrafo {
+    padding: 10px;
+    text-align: justify;
+    background-color: rgba(152, 149, 149, 0.504);
+    font-family: "Reem Kufi Fun", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 24px;
+    font-style: normal;
+    margin-top: 8px;
+}
+
+li {
+    margin-top: 8px;
+    margin-left: 4px
+}
+
+h1 {
+
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(87, 185, 250, 0.5);
+    line-height: 34px;
+}
+
+#h1-Start {
+    text-align: center;
+    padding: 10px;
+    margin-top: 78px;
+    background-color: rgba(87, 185, 250, 0.5);
+
+}
+
+.h2-drop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    border-radius: 20px;
+    text-align: start;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: aliceblue;
+    margin-top: 10px;
+    margin-left: 4px;
+    width: 98vw;
+
+}
+
+menu {
+    display: grid;
+    grid-row: 4;
+    height: 0px;
+    overflow: hidden;
+    width: 94%;
+    margin-top: 1px;
+    transition: all 1s ease;
+    margin-left: 16px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 0;
+}
+
+#menu1.open,
+#menu6.open {
+    height: 200px;
+    padding: 0;
+}
+
+#menu2.open,
+#menu7.open {
+    height: 120px;
+    padding: 0;
+}
+
+#menu3.open {
+    height: 70px;
+}
+
+#menu4.open,
+#menu8.open {
+    height: 150px;
+    padding: 0;
+}
+
+#menu5.open,
+#menu9.open {
+    height: 458px;
+
+    padding: 0;
+}
+
+#menu10.open {
+    height: 134px;
+    padding: 0;
+}
+
+#buttSiAnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.butNext {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 4px;
+    background-color: rgba(87, 185, 250, 0.5);
+}
+
+menu.open {
+    height: 50px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    padding: 4px;
+}
+
+.header-ts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 6px;
+    border-bottom: 2px solid rgb(117, 107, 107);
+    border-radius: 10px;
+    box-shadow: -3px 8px 11px lightblue;
+    background-color: white;
+    z-index: 1;
+}
+
+.header_logImTitl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+
+}
+
+
+#hamburger_items {
+    position: fixed;
+    display: grid;
+    height: calc(100vh + 78px);
+
+    width: 20vw;
+    margin-left: 80vw;
+    justify-items: start;
+    align-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: -3px 8px 11px lightblue;
+    background-color: white;
+    margin-top: -78px;
+    z-index: 2;
+    font-size: 20px;
+    transition: all 1s;
+}
+
+div.arrow-1 {
+
+    height: 10px;
+    width: 10px;
+    border: 1px solid rgb(6, 6, 6);
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+    transition: all 0.5s;
+}
+
+div.arrow-1-open {
+    transform: rotate(135deg);
+    transition: all 0.5s;
+}
+
+
+
+#hamburger_items button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    border: 0px;
+    background-color: transparent;
+    padding: 10px;
+}
+
+#hamburger_items menu a li {
+    margin-left: 20px;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+#hamburger_items menu {
+    background: transparent;
+    border: none;
+}
+
+#hamburger_items h1 {
+    position: absolute;
+    background-color: transparent;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+
+#cerrar {
+    position: absolute;
+    top: 0px;
+    transition: all 1s;
+    left: 88vw;
+    z-index: 3;
+}
+
+#cerrarImg {
+    position: fixed;
+    width: 0px;
+    height: 36px;
+    transition: all 1s;
+    z-index: 999;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/* estilos para la pagina de comparación */
+menu div:first-child {
+    background-color: aqua;
+}
+
+menu div:nth-child(2) {
+    background-color: rgba(250, 87, 244, 0.5);
+}
+
+menu div:nth-child(3) {
+    background-color: rgba(87, 185, 250, 0.5);
+}
+
+#ts_logo {
+    background-image: linear-gradient(90deg, hsl(199deg 98% 52%) 0%, hsl(199deg 93% 50%) 21%, hsl(199deg 91% 49%) 30%, hsl(199deg 92% 48%) 39%, hsl(199deg 92% 46%) 46%, hsl(199deg 93% 45%) 54%, hsl(199deg 93% 43%) 61%, hsl(199deg 94% 42%) 69%);
+    background-size: 400% 400%;
+    animation: gradienteAnimacion 6s ease infinite;
+
+}
+
+#an_logo {
+    background-image: linear-gradient(90deg, hsl(264, 71%, 62%) 0%, hsl(270, 54%, 57%) 21%, hsl(277, 78%, 78%) 30%, hsl(282, 48%, 64%) 39%, hsl(288, 55%, 69%) 46%);
+    background-size: 400% 400%;
+    animation: gradienteAnimacion 6s ease infinite;
+}
+
+
+
+
+#io_logo {
+
+
+    background-image: linear-gradient(95deg, hsl(239deg 53% 59%) 0%, hsl(239deg 54% 62%) 20%, hsl(239deg 54% 65%) 31%, hsl(239deg 55% 68%) 40%, hsl(239deg 56% 71%) 47%, hsl(238deg 57% 74%) 55%, hsl(239deg 58% 77%) 62%);
+    background-size: 400% 400%;
+    animation: gradienteAnimacion 6s ease infinite;
+
+}
+
+@keyframes gradienteAnimacion {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
