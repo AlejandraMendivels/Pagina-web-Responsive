@@ -8,8 +8,15 @@ buttHamb.addEventListener("click", () => {
 
   navHam.style.visibility = "visible"
   body[0].style.backgroundColor = "rgba(0, 0, 0, 0.5)"
-  navHam.style.width = "80vw";
-  navHam.style.marginLeft = "20vw"
+  if (width <= 650) {
+    navHam.style.width = "80vw";
+    navHam.style.marginLeft = "20vw"
+  } else {
+    navHam.style.width = "50vw";
+    navHam.style.marginLeft = "50vw"
+    console.log('hola')
+
+  }
   cerrar.style.visibility = "visible"
   imgCerrar.style.width = "36px"
 
