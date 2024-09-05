@@ -1,0 +1,272 @@
+@media (width >= 651px){
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Reem Kufi Fun", sans-serif;
+    line-height: 24px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    padding: 10px;
+    text-align: justify;
+    background-color: #e0f7fa;
+    margin-top: 8px;
+}
+
+.parrafo {
+    padding: 10px;
+    text-align: justify;
+    background-color: #e0f7fa;
+    margin-top: 8px;
+}
+
+li {
+    margin-top: 8px;
+    margin-left: 4px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    background-color: #3399ff;
+    color: white;
+    line-height: 34px;
+    box-shadow: none;
+}
+
+#h1-Start {
+    text-align: center;
+    padding: 10px;
+    background-color: #3399ff;
+    color: white;
+    box-shadow: none;
+}
+
+.h2-drop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: #e0f7fa;
+    margin-top: 10px;
+    width: 98vw;
+}
+
+menu {
+    height: 0;
+    overflow: hidden;
+    width: 94%;
+    padding: 4px;
+    margin-top: 1px;
+    transition: height 0.3s ease;
+    margin-left: 16px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#menu1.open,
+#menu6.open {
+    height: 80px;
+}
+
+#menu2.open,
+#menu7.open {
+    height: 64px;
+}
+
+#menu3.open {
+    height: 70px;
+}
+
+#menu4.open,
+#menu8.open {
+    height: 80px;
+}
+
+#menu5.open,
+#menu9.open {
+    height: 130px;
+    margin-bottom: 68px;
+}
+
+#menu10.open {
+    height: 134px;
+}
+
+#buttSiAnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.butNext {
+    margin: 10px;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 4px;
+    background-color: #3399ff;
+    color: white;
+}
+
+.header-ts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 6px;
+    border-bottom: 2px solid #767676;
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: white;
+    z-index: 1;
+}
+
+.header_logImTitl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#hamburger_items {
+    position: fixed;
+    display: grid;
+    height: calc(100vh + 78px);
+    width: 20vw;
+    margin-left: 80vw;
+    justify-items: start;
+    align-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+    margin-top: -78px;
+    z-index: 2;
+    font-size: 20px;
+    transition: all 1s;
+    box-shadow: none;
+}
+
+div.arrow-1 {
+    height: 10px;
+    width: 10px;
+    border: 1px solid rgb(6, 6, 6);
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+    transition: all 0.5s;
+}
+
+div.arrow-1-open {
+    transform: rotate(135deg);
+    transition: all 0.5s;
+}
+
+#hamburger_items button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    border: 0;
+    background-color: transparent;
+    padding: 10px;
+}
+
+#hamburger_items menu a li {
+    margin-left: 20px;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+#hamburger_items menu {
+    background: transparent;
+    border: none;
+}
+
+#hamburger_items h1 {
+    position: absolute;
+    background-color: transparent;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    color: black;
+    box-shadow: none;
+}
+
+#cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    visibility: hidden;
+    z-index: 10;
+}
+
+#cerrarImg {
+    position: fixed;
+    width: 0;
+    height: 36px;
+    transition: all 1s;
+    z-index: 999;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.back-to-main {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #3399ff;
+    color: #ffff;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.back-to-main:hover {
+    background-color: rgba(9, 42, 233, 0.7);
+}
+
+.header-ts {
+    position: relative;
+}
+
+@media (min-width: 951px) {
+    .h2-drop {
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+        column-gap: 20px;
+        padding: 15px;
+    }
+    #cerrar {
+        right: 30px;
+    }
+}
+}

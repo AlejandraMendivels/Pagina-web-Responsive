@@ -6,8 +6,17 @@
 
 }
 
+@media (width<=650px) {
+    .logos {
+        display: grid;
+        width: 100%;
+  
+    }
+#logo_title{
+    display: none;
+}
 
-    #logo_title {
+    #logo_titleM {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -83,3 +92,4 @@
             background-position: 0% 50%;
         }
     }
+}

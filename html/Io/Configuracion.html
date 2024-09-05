@@ -4,123 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Que Es TypeScript</title>
+    <title>Qué Es TypeScript</title>
+    <link rel="stylesheet" href="../../css/io/Content_Ionic.css">
     <link rel="stylesheet" href="../../css/io/Que_Es.css">
-    <script type="module"
-        src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"></script>
-
+    <script type="module" src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header-ts">
-
         <div>
-            <a href="../../index.html"><img width="36px" height="36px" src="../../resources/Logos/home.svg" alt=""></a>
+            <a href="../../index.html"><img width="36px" height="36px" src="../../resources/Logos/home.svg" alt="Home"></a>
         </div>
         <div class="header_logImTitl">
             <div id="header_logo_ts">
-                <img id="img" width="50px" height="60px" style="margin-right: 10px;"
-                    src="../../resources/Logos/ionic-icon.svg" alt="">
+                <img id="img" width="50px" height="60px" style="margin-right: 10px;" src="../../resources/Logos/ionic-icon.svg" alt="Ionic">
             </div>
-
-            <div id="header_title_ts">
-                Ionic
-            </div>
+            <div id="header_title_ts">Ionic</div>
         </div>
         <div>
-            <button id="hamburger" style="border: 0; background-color: transparent;padding: 5px;">
-                <img width="30px" height="30px" src="../../resources/Logos/menu_icon.svg" alt="">
+            <button id="hamburger" style="border: 0; background-color: transparent; padding: 5px;">
+                <img width="30px" height="30px" src="../../resources/Logos/menu_icon.svg" alt="Menu">
             </button>
         </div>
-
     </header>
-
-    <button id="cerrar" style="border: 0; background-color: transparent;padding: 5px;visibility: visible;">
-        <img id="cerrarImg" src="../../resources/Logos/cerrar.svg" alt="">
+    <a href="Que_Es.html" class="back-to-main">&lt; Volver</a>
+    <button id="cerrar" style="border: 0; background-color: transparent; padding: 5px; visibility: visible;">
+        <img id="cerrarImg" src="../../resources/Logos/cerrar.svg" alt="Cerrar">
     </button>
-
     
     <nav id="hamburger_items" style="visibility: hidden;">
-        <h1>lista de temas</h1>
+        <h1>Lista de Temas 📚</h1>
         <br><br>
-        <a href="Que_Es.html"><button class="h2-drop" data-target="menu1">
+        <a href="Que_Es.html">
+            <button class="h2-drop" data-target="menu1">
                 <div class="arrow-1"></div>
-                <h2>Introducción</h2>
+                <h2>Introducción 📝</h2>
             </button>
         </a>
         <button class="h2-drop" data-target="menu2">
             <div class="arrow-1"></div>
-            <h2>configuración</h2>
+            <h2>Configuración ⚙️</h2>
         </button>
         <menu id="menu2">
             <a href="Configuracion.html#cierre">
-                <li>Instalación</li>
+                <li>Instalación 🔧</li>
             </a>
             <a href="Configuracion.html#confGen">
-                <li>Configuraciones generales</li>
+                <li>Configuraciones Generales 🛠️</li>
             </a>
         </menu>
         <button class="h2-drop" data-target="menu3">
             <div class="arrow-1"></div>
-            <h2>Características</h2>
+            <h2>Características ✨</h2>
         </button>
         <menu id="menu3">
             <a href="caracteristicas.html#cierra">
-                <li>Características Principales de Ionic</li>
+                <li>Características Principales de Ionic 🌟</li>
             </a>
-           
         </menu>
-
     </nav>
 
     <main>
-        <h1 id="h1-Start">Configuracion</h1>
+        <h1 id="h1-Start">Configuración ⚙️</h1>
         <br>
-        <p>en este apartado se mostrara el como instalar ionic por cli y algunos comandos para la configuracion de un
-            archivo ionic
-        </p>
+        <p>En este apartado se mostrará cómo instalar Ionic por CLI y algunos comandos para la configuración de un archivo Ionic.</p>
         <br>
-        <h1>Instalacion</h1>
-        <p>la ionic cli puede ser instalada con el siguiente comando</p>
-        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
+        <h1>Instalación 🔧</h1>
+        <p>La Ionic CLI puede ser instalada con el siguiente comando:</p>
+        <deckgo-highlight-code style="margin-left: 30px; margin-right: 30px; margin-top: 10px" language="ts">
             <code slot="code">
 npm install -g @ionic/cli
-        </code>
+            </code>
         </deckgo-highlight-code>
-        <li><span style="font-weight: 1000;background-color: aqua;">help</span></li>
+        <li><span style="font-weight: 1000; background-color: aqua;">Help ❓</span></li>
         <p>La CLI de Ionic viene con documentación de comandos que es accesible con la opción --help.</p>
-        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
+        <deckgo-highlight-code style="margin-left: 30px; margin-right: 30px; margin-top: 10px" language="ts">
             <code slot="code">
 <!-- $ ionic --help
 $ ionic <command> --help
 $ ionic <command> <subcommand> --help -->
-        </code>
+            </code>
         </deckgo-highlight-code>
         <br>
-        <h1 id="confGen">configuraciones generales</h1>
-        <li><span style="font-weight: 1000;background-color: aqua;">files</span></li>
-        <p>Los valores de configuración se almacenan en archivos JSON. La CLI de Ionic mantiene un archivo de
-            configuración global, usualmente localizado en ~/.ionic/config.json, y archivos de configuración de
-            proyecto, usualmente en el directorio raíz del proyecto como ionic.config.json.
-<br>
-            La CLI proporciona comandos para establecer e imprimir los valores de configuración de los archivos de
-            configuración del proyecto y el archivo de configuración global de la CLI. Ver ionic config --help o ver la
-            documentación para el uso de ionic config get y ionic config set.</p>
-            <li><span style="font-weight: 1000;background-color: aqua;">flags</span></li>
-            <p>CLI flags son opciones globales que alteran el comportamiento de un comando CLI.</p>
-            <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
-                <code slot="code">
+        <h1 id="confGen">Configuraciones Generales 🛠️</h1>
+        <li><span style="font-weight: 1000; background-color: aqua;">Files 📂</span></li>
+        <p>Los valores de configuración se almacenan en archivos JSON. La CLI de Ionic mantiene un archivo de configuración global, usualmente localizado en ~/.ionic/config.json, y archivos de configuración de proyecto, usualmente en el directorio raíz del proyecto como ionic.config.json.
+            <br>
+            La CLI proporciona comandos para establecer e imprimir los valores de configuración de los archivos de configuración del proyecto y el archivo de configuración global de la CLI. Ver ionic config --help o ver la documentación para el uso de ionic config get y ionic config set.</p>
+        <li><span style="font-weight: 1000; background-color: aqua;">Flags 🚩</span></li>
+        <p>CLI flags son opciones globales que alteran el comportamiento de un comando CLI.</p>
+        <deckgo-highlight-code style="margin-left: 30px; margin-right: 30px; margin-top: 10px" language="ts">
+            <code slot="code">
 --help: Instead of running the command, view its help page.
 --verbose: Show all log messages for debugging purposes.
 --quiet: Only show WARN and ERROR log messages.
 --no-interactive: Turn off interactive prompts and fancy outputs. If CI or a non-TTY terminal is detected, the CLI is automatically non-interactive.
 --confirm: Turn on auto-confirmation of confirmation prompts. Careful: the CLI prompts before doing something potentially harmful. Auto-confirming may have unintended results.
             </code>
-            </deckgo-highlight-code>
+        </deckgo-highlight-code>
         <div id="buttSiAnt">
-            <a href="../Io/Que_Es.html" class="butNext">tema anterior</a>
-            <a href="../Io/caracteristicas.html" class="butNext">siguiente tema</a>
+            <a href="../Io/Que_Es.html" class="butNext">Tema Anterior ⏪</a>
+            <a href="../Io/caracteristicas.html" class="butNext">Siguiente Tema ⏩</a>
         </div>
     </main>
 

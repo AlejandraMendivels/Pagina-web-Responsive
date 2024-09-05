@@ -1,0 +1,178 @@
+@media (width>650px){
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: linear-gradient(90deg, hsl(264deg 83% 39%) 0%, hsl(270deg 77% 40%) 21%, hsl(277deg 73% 40%) 30%, hsl(282deg 69% 40%) 39%, hsl(288deg 66% 41%) 46%);
+    background-size: 400% 400%;
+    animation: gradienteAnimacion 6s ease infinite;
+    border-top: 4px solid black;
+    border-bottom: 0px;
+}
+
+@keyframes gradienteAnimacion {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.logo-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#logo_titleM{
+    display: none;
+}
+
+#logo_title {
+    font-size: 36px;
+    color: #fff;
+    background-color: #3f8a80;
+    padding: 20px 25px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: block;
+    max-width: 100%;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.logos img {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+    width: 240px;
+    height: 120px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+#ts_logo {
+    border-radius: 15px;
+    background-image: linear-gradient(90deg, hsl(199deg 85% 60%) 0%, hsl(199deg 80% 55%) 21%, hsl(199deg 75% 50%) 30%, hsl(199deg 70% 45%) 39%, hsl(199deg 65% 40%) 46%, hsl(199deg 60% 35%) 54%, hsl(199deg 55% 30%) 61%, hsl(200, 100%, 82%) 69%);
+    background-size: 400% 400%;
+    animation: gradienteAnimacion 6s ease infinite;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+}
+
+#ts_logo:hover {
+    transform: scale(1.1);
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#an_logo {
+    background-image: linear-gradient(90deg, hsl(264, 55%, 70%) 0%, hsl(270, 50%, 65%) 21%, hsl(277, 45%, 60%) 30%, hsl(282, 40%, 55%) 39%, hsl(287, 44%, 88%) 46%);
+    background-size: 400% 400%;
+    animation: gradienteAnimacion 6s ease infinite;
+    border-radius: 15px;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+}
+
+#an_logo:hover {
+    transform: scale(1.1);
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#io_logo {
+    background-image: linear-gradient(95deg, hsl(239deg 65% 65%) 0%, hsl(239deg 60% 60%) 20%, hsl(239deg 55% 55%) 31%, hsl(239deg 50% 50%) 40%, hsl(239deg 45% 45%) 47%, hsl(238deg 40% 40%) 55%, hsl(0, 100%, 100%) 62%);
+    background-size: 400% 400%;
+    animation: gradienteAnimacion 6s ease infinite;
+    border-radius: 15px;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+}
+
+#io_logo:hover {
+    transform: scale(1.1);
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.logos img:hover {
+    transform: scale(1.1);
+    border-color: #3f8a80;
+    border-radius: 25px;
+}
+
+#ts_logo:hover {
+    background-color: #002b5d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#an_logo:hover {
+    background-color: #d6006b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#io_logo:hover {
+    background-color: #cce0ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 950px) {
+    .logo-container {
+        padding: 10px;
+        max-width: 960px;
+    }
+
+    .logos {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .logos img {
+        width: 200px;
+        height: 100px;
+    }
+}
+
+.back-to-main {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(27, 27, 255, 0.5);
+    color: #ffff;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-main:hover {
+    background-color: rgba(59, 151, 255, 0.7);
+    transform: scale(1.05);
+}
+}

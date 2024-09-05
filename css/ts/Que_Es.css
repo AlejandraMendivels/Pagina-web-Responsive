@@ -12,8 +12,8 @@
 } 
 
 
-/* 
-@media (width < 681px) { */
+
+@media (width <= 650px) {
     a {
         text-decoration: none;
         color: black;
@@ -244,6 +244,7 @@
         background-color: transparent;
         margin-top: 40px;
         text-align: center;
+        color: black;
         width: 100%;
     }
 
@@ -274,4 +275,4 @@
         }
     }
 
-/* } */
+}

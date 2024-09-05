@@ -12,8 +12,8 @@ html {
  
 } 
 
-/* 
-@media (width < 681px) { */
+
+@media (width <= 650px) {
     a {
         text-decoration: none;
         color: black;
@@ -263,3 +263,4 @@ html {
     }
 
 
+}

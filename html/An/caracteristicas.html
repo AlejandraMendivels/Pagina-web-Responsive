@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Que Es TypeScript</title>
+    <title>¿Qué Es TypeScript?</title>
     <link rel="stylesheet" href="../../css/an/Que_Es.css">
+    <link rel="stylesheet" href="../../css/an/Content_Angular.css">
     <script type="module"
         src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"></script>
 
@@ -34,94 +35,95 @@
         </div>
 
     </header>
+    <a href="Que_Es.html" class="back-to-main">&lt; Volver</a>
 
     <button id="cerrar" style="border: 0; background-color: transparent;padding: 5px;visibility: visible;">
         <img id="cerrarImg" src="../../resources/Logos/cerrar.svg" alt="">
     </button>
 
     <nav id="hamburger_items" style="visibility: hidden;">
-        <h1>lista de temas</h1>
+        <h1>📋 Lista de Temas</h1>
         <br><br>
         <a href="Que_Es.html"><button class="h2-drop" data-target="menu1">
                 <div class="arrow-1"></div>
-                <h2>Introducción</h2>
+                <h2>🔍 Introducción</h2>
             </button></a>
         <button class="h2-drop" data-target="menu1">
             <div class="arrow-1"></div>
-            <h2>Características</h2>
+            <h2>✨ Características</h2>
         </button>
         <menu id="menu1">
             <a href="../An/caracteristicas.html#cerrar">
-                <li>Componentes</li>
+                <li>🧩 Componentes</li>
             </a>
             <a href="../An/caracteristicas.html#temp">
-                <li>Templates</li>
+                <li>📜 Templates</li>
             </a>
             <a href="../An/caracteristicas.html#DI">
-                <li>Dependency Injection</li>
+                <li>🔌 Dependency Injection</li>
             </a>
             <a href="../An/caracteristicas.html#rxjs">
-                <li>RxJS:</li>
+                <li>🔄 RxJS</li>
             </a>
 
         </menu>
         <button class="h2-drop" data-target="menu2">
             <div class="arrow-1"></div>
-            <h2>Instalación de Angular</h2>
+            <h2>⚙️ Instalación de Angular</h2>
         </button>
         <menu id="menu2">
             <a href="instalacionAngular.html#cerrar">
-                <li>Instalar Angular CLI</li>
+                <li>📦 Instalar Angular CLI</li>
             </a>
         </menu>
         <button class="h2-drop" data-target="menu3">
             <div class="arrow-1"></div>
-            <h2>Ejemplos</h2>
+            <h2>🔢 Ejemplos</h2>
         </button>
         <menu id="menu3">
             <a href="ejemplos.html#cerrar">
-                <li>código y estructura básica</li>
+                <li>📝 Código y estructura básica</li>
             </a>
             <a href="ejemplos.html#CB">
-                <li>componente básico</li>
+                <li>🛠️ Componente básico</li>
             </a>
         </menu>
         <button class="h2-drop" data-target="menu4">
             <div class="arrow-1"></div>
-            <h2>Signals</h2>
+            <h2>🔔 Signals</h2>
         </button>
         <menu id="menu4">
             <a href="signals.html#cerrar">
-                <li>que son?</li>
+                <li>❓ ¿Qué son?</li>
             </a>
             <a href="signals.html#ventaja">
-                <li>Ventajas</li>
+                <li>💡 Ventajas</li>
             </a>
         </menu>
 
     </nav>
 
     <main>
-        <h1 id="h1-Start">características</h1>
+        <h1 id="h1-Start">🔍 Características</h1>
         <br>
-        <p>exploraremos algunas de las características más importantes de Angular que facilitan el desarrollo de
+        <p>Exploraremos algunas de las características más importantes de Angular que facilitan el desarrollo de
             aplicaciones web modernas y escalables. A continuación, veremos cómo los Componentes, Templates, Dependency
             Injection y RxJS juegan un papel crucial en la creación de aplicaciones robustas y mantenibles.
         </p>
         <br>
-        <h1 >Componentes</h1>
+        <h1>🧩 Componentes</h1>
         <p>Componentes son la piedra angular de las aplicaciones en Angular. Un componente en Angular es una pieza de
             código que encapsula una parte de la interfaz de usuario (UI) y su lógica asociada. Cada componente consta
             de:</p>
 
         <div class="parrafo">
-            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Clase:</span> Define el comportamiento del
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">📦 Clase:</span> Define el comportamiento del
                 componente.</li>
-            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Template:</span>Template: Define la vista o el
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">🎨 Template:</span> Define la vista o el
                 diseño del componente.</li>
-            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Estilos: </span>Estilizan la vista del
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">🎨 Estilos:</span> Estilizan la vista del
                 componente.</li>
-            <li>Un decorador @Component que proporciona metadatos sobre el componente, como su selector, template y
+            <li>🛠️ Un decorador @Component que proporciona metadatos sobre el componente, como su selector, template y
                 estilos</li>
         </div>
         <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
@@ -144,16 +146,16 @@ export class AppComponent {
                 </code>
         </deckgo-highlight-code>
         <br>
-        <h1 id="temp">Templates</h1>
+        <h1 id="temp">📜 Templates</h1>
         <div class="parrafo">
             Templates son el HTML asociado con un componente en Angular. Se encargan de definir la estructura de la
             vista del componente y pueden incluir:
-            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Expresiones de datos:</span> Se utilizan para
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">🔗 Expresiones de datos:</span> Se utilizan para
                 mostrar datos dinámicos.</li>
-            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Directivas:</span> Son instrucciones en el
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">📋 Directivas:</span> Son instrucciones en el
                 template que cambian el comportamiento o el aspecto del DOM (por
                 ejemplo, *ngIf para condicionales y *ngFor para bucles).</li>
-            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Binding de datos:</span> Permite que los datos
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">🔄 Binding de datos:</span> Permite que los datos
                 del componente se sincronicen con la vista. Hay diferentes tipos
                 de binding, como el binding de propiedad, el binding de evento y el two-way binding.</li>
         </div>
@@ -165,105 +167,89 @@ export class AppComponent {
                 </code>
         </deckgo-highlight-code>
         <br>
-        <h1 id="DI">Dependency Injection (DI)</h1>
+        <h1 id="DI">🔌 Dependency Injection (DI)</h1>
         <div class="parrafo">
             Dependency Injection (DI) es un patrón de diseño que Angular utiliza para gestionar la inyección de
             dependencias en los componentes y servicios. Permite que los objetos (dependencias) sean inyectados en lugar
             de ser creados directamente dentro de los componentes. Esto tiene varias ventajas:
-            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Facilita el testing:</span> Al permitir que las
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">🧪 Facilita el testing:</span> Al permitir que las
                 dependencias se inyecten, es más fácil reemplazarlas con
                 versiones simuladas durante las pruebas.</li>
-            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Promueve la reutilización:</span> Los servicios
-                y otros objetos pueden ser compartidos entre múltiples
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">🔁 Promueve la reutilización:</span> Los servicios
+                y otros objetos pueden ser reutilizados a través de diferentes
                 componentes.</li>
-            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Desacopla el código:</span> Los componentes y
-                servicios no están acoplados directamente a sus dependencias, lo
-                que mejora la flexibilidad y la mantenibilidad del código.</li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">🛠️ Mejora la flexibilidad:</span> Permite
+                cambiar la implementación de las dependencias sin necesidad de modificar el código de los componentes.</li>
         </div>
         <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
             <code slot="code">
-// archivo: data.service.ts
-import { Injectable } from '@angular/core';
-
-@Injectable({
-    providedIn: 'root' // El servicio está disponible en toda la aplicación
-})
-export class DataService {
-    getData() {
-    return ['dato1', 'dato2', 'dato3'];
-    }
-}
-    
 // archivo: app.component.ts
 import { Component } from '@angular/core';
-import { DataService } from './data.service';
+import { DataService } from './data.service'; // Servicio
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  data: string[];
+    constructor(private dataService: DataService) {} // Inyección de dependencias
 
-  constructor(private dataService: DataService) {
-    this.data = this.dataService.getData();
-  }
-}
-
+    getData() {
+        this.dataService.getData().subscribe(data => {
+            console.log(data);
+        });
+    }
+}                  
                 </code>
         </deckgo-highlight-code>
         <br>
-        <h1 id="rxjs">RxJS</h1>
-        <div>
-            RxJS (Reactive Extensions for JavaScript) es una biblioteca para programación reactiva utilizando
-            Observables. En Angular, RxJS es ampliamente utilizado para gestionar operaciones asíncronas y eventos.
-            Algunos conceptos clave de RxJS son:
-            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Observables:</span> Representan secuencias de
-                valores o eventos que se pueden observar y reaccionar a ellos.
-            </li>
-            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Operators:</span> Funciones que permiten
-                transformar, combinar, y manipular flujos de datos (como map, filter,
-                merge, concat, etc.).</li>
-            <li><span style="background-color: rgba(250, 87, 244, 0.5);">Subjects:</span> Son un tipo especial de
-                Observable que también puede actuar como un Observer, permitiendo la
-                emisión de valores a múltiples suscriptores.</li>
+        <h1 id="rxjs">🔄 RxJS</h1>
+        <div class="parrafo">
+            RxJS (Reactive Extensions for JavaScript) es una librería para manejar programación reactiva y asincrónica
+            usando observables. Angular utiliza RxJS para gestionar eventos asíncronos, datos y flujos de eventos. Algunas
+            características clave de RxJS incluyen:
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">📦 Observables:</span> Representan una colección
+                de valores futuros o eventos.</li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">🔄 Operadores:</span> Permiten transformar,
+                combinar y manipular observables.</li>
+            <li><span style="background-color: rgba(250, 87, 244, 0.5);">🧩 Suscripciones:</span> Permiten escuchar y
+                responder a los valores emitidos por un observable.</li>
         </div>
         <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
             <code slot="code">
-                // archivo: app.component.ts
+// archivo: app.component.ts
 import { Component } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { DataService } from './data.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  data$: Observable < string[] >;
+    data$: Observable<any>;
 
-  constructor() {
-    this.data$ = of(['dato1', 'dato2', 'dato3']).pipe(
-      map(data => data.map(item => item.toUpperCase())) // Transforma los datos a mayúsculas
-    );
-  }
-}
-</code>
+    constructor(private dataService: DataService) {
+        this.data$ = this.dataService.getData(); // Suscripción al observable
+    }
+}                  
+                </code>
         </deckgo-highlight-code>
-        <p>
-            RxJS es fundamental en Angular para manejar operaciones asíncronas, como solicitudes HTTP, y para la gestión
-            del flujo de datos en aplicaciones complejas, permitiendo un manejo eficiente y flexible de eventos y
-            estados.
-        </p>
-        <div id="buttSiAnt">
-            <a href="../An/Que_Es.html" class="butNext">tema anterior</a>
-            <a href="../An/instalacionAngular.html" class="butNext">siguiente tema</a>
-        </div>
+        <br>
     </main>
+    <div id="buttSiAnt">
+        <a href="../An/caracteristicas.html" class="butNext">◀️ Tema anterior</a>
+        <a href="../An/ejemplos.html" class="butNext">Siguiente tema ▶️</a>
+    </div>
+    <footer>
+            <p>© 2024 <p>
+        </div>
+    </footer>
 
+
+    <script src="../../js/ts/Que_Es.js"></script>
 </body>
-<script src="../../js/ts/Que_Es.js"></script>
 
 </html>

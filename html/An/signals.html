@@ -4,171 +4,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Que Es TypeScript</title>
+    <title>Qué Es TypeScript</title>
     <link rel="stylesheet" href="../../css/an/Que_Es.css">
-    <script type="module"
-        src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"></script>
-
+    <link rel="stylesheet" href="../../css/an/Content_Angular.css">
+    <script type="module" src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header-ts">
-
         <div>
-            <a href="../../index.html"><img width="36px" height="36px" src="../../resources/Logos/home.svg" alt=""></a>
+            <a href="../../index.html"><img width="36px" height="36px" src="../../resources/Logos/home.svg" alt="Home"></a>
         </div>
         <div class="header_logImTitl">
             <div id="header_logo_ts">
-                <img id="img" width="50px" height="60px" src="../../resources/Logos/Angular_gradient.png" alt="">
+                <img id="img" width="50px" height="60px" src="../../resources/Logos/Angular_gradient.png" alt="Angular Logo">
             </div>
-
             <div id="header_title_ts">
                 Angular
             </div>
         </div>
         <div>
-            <button id="hamburger" style="border: 0; background-color: transparent;padding: 5px;">
-                <img width="30px" height="30px" src="../../resources/Logos/menu_icon.svg" alt="">
+            <button id="hamburger" style="border: 0; background-color: transparent; padding: 5px;">
+                <img width="30px" height="30px" src="../../resources/Logos/menu_icon.svg" alt="Menu">
             </button>
         </div>
-
     </header>
+    <a href="Que_Es.html" class="back-to-main">&lt; Volver</a>
 
-    <button id="cerrar" style="border: 0; background-color: transparent;padding: 5px;visibility: visible;">
-        <img id="cerrarImg" src="../../resources/Logos/cerrar.svg" alt="">
+    <button id="cerrar" style="border: 0; background-color: transparent; padding: 5px; visibility: visible;">
+        <img id="cerrarImg" src="../../resources/Logos/cerrar.svg" alt="Cerrar">
     </button>
 
     <nav id="hamburger_items" style="visibility: hidden;">
-        <h1>lista de temas</h1>
+        <h1>Lista de Temas 📚</h1>
         <br><br>
-        <a href="Que_Es.html"><button class="h2-drop" data-target="menu1">
+        <a href="Que_Es.html">
+            <button class="h2-drop" data-target="menu1">
                 <div class="arrow-1"></div>
-                <h2>Introducción</h2>
-            </button></a>
+                <h2>Introducción 📝</h2>
+            </button>
+        </a>
         <button class="h2-drop" data-target="menu1">
             <div class="arrow-1"></div>
-            <h2>Características</h2>
+            <h2>Características ⚙️</h2>
         </button>
         <menu id="menu1">
             <a href="../An/caracteristicas.html#cerrar">
-                <li>Componentes</li>
+                <li>Componentes 🔧</li>
             </a>
             <a href="../An/caracteristicas.html#temp">
-                <li>Templates</li>
+                <li>Templates 🧩</li>
             </a>
             <a href="../An/caracteristicas.html#DI">
-                <li>Dependency Injection</li>
+                <li>Dependency Injection 💉</li>
             </a>
             <a href="../An/caracteristicas.html#rxjs">
-                <li>RxJS:</li>
+                <li>RxJS 📊</li>
             </a>
-
         </menu>
         <button class="h2-drop" data-target="menu2">
             <div class="arrow-1"></div>
-            <h2>Instalación de Angular</h2>
+            <h2>Instalación de Angular ⚙️</h2>
         </button>
         <menu id="menu2">
             <a href="instalacionAngular.html#cerrar">
-                <li>Instalar Angular CLI</li>
+                <li>Instalar Angular CLI 🖥️</li>
             </a>
         </menu>
         <button class="h2-drop" data-target="menu3">
             <div class="arrow-1"></div>
-            <h2>Ejemplos</h2>
+            <h2>Ejemplos 📑</h2>
         </button>
         <menu id="menu3">
             <a href="ejemplos.html#cerrar">
-                <li>código y estructura básica</li>
+                <li>Código y estructura básica 📄</li>
             </a>
             <a href="ejemplos.html#CB">
-                <li>componente básico</li>
+                <li>Componente básico 🛠️</li>
             </a>
         </menu>
         <button class="h2-drop" data-target="menu4">
             <div class="arrow-1"></div>
-            <h2>Signals</h2>
+            <h2>Signals 📡</h2>
         </button>
         <menu id="menu4">
             <a href="signals.html#cerrar">
-                <li>que son?</li>
+                <li>¿Qué son? 🤔</li>
             </a>
             <a href="signals.html#ventaja">
-                <li>Ventajas</li>
+                <li>Ventajas 🏆</li>
             </a>
         </menu>
-
     </nav>
 
     <main>
-        <h1 id="h1-Start">Signals</h1>
+        <h1 id="h1-Start">Signals 📡</h1>
         <br>
-        <li><span style="background-color: rgba(250, 87, 244, 0.5);">Que es?
-            </span></li>
+        <li><span style="background-color: rgba(250, 87, 244, 0.5);">¿Qué es? 🤔</span></li>
         <div class="parrafo">
             Imagina los signals como variables especiales que "reaccionan" a cambios. Cuando el valor de un signal
-            cambia,automáticamente se actualiza cualquier parte de tu aplicación que dependa de ese valor. Esto crea un
+            cambia, automáticamente se actualiza cualquier parte de tu aplicación que dependa de ese valor. Esto crea un
             sistema de actualizaciones en tiempo real, haciendo que tu interfaz de usuario sea más dinámica y
             responsiva.
             Los signals son ideales para cualquier aplicación Angular donde la gestión del estado sea un aspecto
             importante. Son especialmente útiles para:
-
-            <li>Crear aplicaciones con interfaces de usuario dinámicas y reactivas.
-            </li>
-            <li>Manejar grandes cantidades de datos.
-            </li>
-            <li>Construir aplicaciones que requieren un alto rendimiento.
-            </li>
+            <li>Crear aplicaciones con interfaces de usuario dinámicas y reactivas. 💬</li>
+            <li>Manejar grandes cantidades de datos. 📊</li>
+            <li>Construir aplicaciones que requieren un alto rendimiento. 🚀</li>
             <br>
             <span style="background-color: rgba(250, 87, 244, 0.5);">Para entenderlo mejor, pensemos en un ejemplo
-                sencillo:
-            </span>
-
+                sencillo: 📘</span>
             Supongamos que tenemos un contador en una aplicación Angular. Con signals, podemos crear un signal llamado
-            county asignarle un valor inicial de 0. Luego, en nuestra plantilla HTML, podemos mostrar el valor de este
+            count y asignarle un valor inicial de 0. Luego, en nuestra plantilla HTML, podemos mostrar el valor de este
             signal directamente.
-
         </div>
         <br>
-        <span style="background-color: rgba(250, 87, 244, 0.5);">TypeScript
-        </span>
-        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="ts">
+        <span style="background-color: rgba(250, 87, 244, 0.5);">TypeScript 🖥️</span>
+        <deckgo-highlight-code style="margin-left: 30px; margin-right: 30px; margin-top: 10px" language="ts">
             <code slot="code">
 import { signal } from '@angular/core';
 
 const count = signal(0);
-                </code>
+            </code>
         </deckgo-highlight-code>
         <br>
-        <span style="background-color: rgba(250, 87, 244, 0.5);">HTML
-        </span>
-        <deckgo-highlight-code style="margin-left: 30px;margin-right: 30px;margin-top: 10px" language="html">
+        <span style="background-color: rgba(250, 87, 244, 0.5);">HTML 📜</span>
+        <deckgo-highlight-code style="margin-left: 30px; margin-right: 30px; margin-top: 10px" language="html">
             <code slot="code">
 <p>El contador es: {{ count() }}</p>
-                </code>
+            </code>
         </deckgo-highlight-code>
         <p>Cada vez que el valor de count cambie (por ejemplo, al hacer clic en un botón para incrementarlo), la
             plantilla se actualizará automáticamente para mostrar el nuevo valor.
         </p>
         <br>
-        <h1 id="ventaja">Ventajas</h1>
+        <h1 id="ventaja">Ventajas 🏆</h1>
         <div class="parrafo">
             <li><span style="background-color: rgba(250, 87, 244, 0.5);">Simplifica la reactividad:</span> Elimina la
-                necesidad de mecanismos complejos para detectar cambios.
+                necesidad de mecanismos complejos para detectar cambios. 🔄
             </li>
             <li><span style="background-color: rgba(250, 87, 244, 0.5);">Mejora el rendimiento:</span> Actualiza solo lo
-                necesario, haciendo tu app más rápida.
+                necesario, haciendo tu app más rápida. ⚡
             </li>
             <li><span style="background-color: rgba(250, 87, 244, 0.5);">Código más limpio:</span> La sintaxis es más
-                intuitiva y fácil de entender.
+                intuitiva y fácil de entender. 🧹
             </li>
             <li><span style="background-color: rgba(250, 87, 244, 0.5);">Integración con RxJS:</span> Funciona muy bien
-                con la librería RxJS para manejar flujos de datos asíncronos
+                con la librería RxJS para manejar flujos de datos asíncronos 📈
             </li>
         </div>
         <div id="buttSiAnt">
-            <a href="../An/instalacionAngular.html" class="butNext">tema anterior</a>
+            <a href="../An/instalacionAngular.html" class="butNext">Tema anterior ⬅️</a>
             <a href=""></a>
         </div>
     </main>
