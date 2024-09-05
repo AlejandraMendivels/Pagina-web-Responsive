@@ -8,6 +8,7 @@ buttHamb.addEventListener("click", () => {
 
   navHam.style.visibility = "visible"
   body[0].style.backgroundColor = "rgba(0, 0, 0, 0.5)"
+  let width = document.documentElement.clientWidth
   if (width <= 650) {
     navHam.style.width = "80vw";
     navHam.style.marginLeft = "20vw"
